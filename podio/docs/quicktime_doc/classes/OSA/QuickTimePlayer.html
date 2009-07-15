@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: OSA::QuickTimePlayer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">OSA::QuickTimePlayer</td>
+        </tr>
+<!--
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../files/var/folders/yQ/yQVxIvSvFDW8bmNDYFpjg++++TI/-Tmp-/QuickTime Player-0-25765_rb.html">
+                /var/folders/yQ/yQVxIvSvFDW8bmNDYFpjg++++TI/-Tmp-/QuickTime Player-0-25765.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+-->
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+The QuickTime Player module.
+</p>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+    <div id="class-list">
+      <h3 class="section-bar">Classes and Modules</h3>
+
+      Module <a href="QuickTimePlayer/APER.html" class="link">OSA::QuickTimePlayer::APER</a><br />
+Module <a href="QuickTimePlayer/BKMT.html" class="link">OSA::QuickTimePlayer::BKMT</a><br />
+Module <a href="QuickTimePlayer/EIDN.html" class="link">OSA::QuickTimePlayer::EIDN</a><br />
+Module <a href="QuickTimePlayer/EXPK.html" class="link">OSA::QuickTimePlayer::EXPK</a><br />
+Module <a href="QuickTimePlayer/EXPS.html" class="link">OSA::QuickTimePlayer::EXPS</a><br />
+Module <a href="QuickTimePlayer/HSLT.html" class="link">OSA::QuickTimePlayer::HSLT</a><br />
+Module <a href="QuickTimePlayer/JUST.html" class="link">OSA::QuickTimePlayer::JUST</a><br />
+Module <a href="QuickTimePlayer/LOAD.html" class="link">OSA::QuickTimePlayer::LOAD</a><br />
+Module <a href="QuickTimePlayer/MEDK.html" class="link">OSA::QuickTimePlayer::MEDK</a><br />
+Module <a href="QuickTimePlayer/MVSZ.html" class="link">OSA::QuickTimePlayer::MVSZ</a><br />
+Module <a href="QuickTimePlayer/NAVM.html" class="link">OSA::QuickTimePlayer::NAVM</a><br />
+Module <a href="QuickTimePlayer/NUDG.html" class="link">OSA::QuickTimePlayer::NUDG</a><br />
+Module <a href="QuickTimePlayer/PLAY.html" class="link">OSA::QuickTimePlayer::PLAY</a><br />
+Module <a href="QuickTimePlayer/PRMD.html" class="link">OSA::QuickTimePlayer::PRMD</a><br />
+Module <a href="QuickTimePlayer/PRST.html" class="link">OSA::QuickTimePlayer::PRST</a><br />
+Module <a href="QuickTimePlayer/QTCS.html" class="link">OSA::QuickTimePlayer::QTCS</a><br />
+Module <a href="QuickTimePlayer/RCST.html" class="link">OSA::QuickTimePlayer::RCST</a><br />
+Module <a href="QuickTimePlayer/SAVK.html" class="link">OSA::QuickTimePlayer::SAVK</a><br />
+Module <a href="QuickTimePlayer/SAVO.html" class="link">OSA::QuickTimePlayer::SAVO</a><br />
+Module <a href="QuickTimePlayer/SCHD.html" class="link">OSA::QuickTimePlayer::SCHD</a><br />
+Module <a href="QuickTimePlayer/STYL.html" class="link">OSA::QuickTimePlayer::STYL</a><br />
+Module <a href="QuickTimePlayer/TRAN.html" class="link">OSA::QuickTimePlayer::TRAN</a><br />
+Module <a href="QuickTimePlayer/TXOP.html" class="link">OSA::QuickTimePlayer::TXOP</a><br />
+Module <a href="QuickTimePlayer/VRTY.html" class="link">OSA::QuickTimePlayer::VRTY</a><br />
+Module <a href="QuickTimePlayer/ZDIR.html" class="link">OSA::QuickTimePlayer::ZDIR</a><br />
+Class <a href="QuickTimePlayer/Annotation.html" class="link">OSA::QuickTimePlayer::Annotation</a><br />
+Class <a href="QuickTimePlayer/Application.html" class="link">OSA::QuickTimePlayer::Application</a><br />
+Class <a href="QuickTimePlayer/Chapter.html" class="link">OSA::QuickTimePlayer::Chapter</a><br />
+Class <a href="QuickTimePlayer/Color.html" class="link">OSA::QuickTimePlayer::Color</a><br />
+Class <a href="QuickTimePlayer/Document.html" class="link">OSA::QuickTimePlayer::Document</a><br />
+Class <a href="QuickTimePlayer/Favorite.html" class="link">OSA::QuickTimePlayer::Favorite</a><br />
+Class <a href="QuickTimePlayer/Frame.html" class="link">OSA::QuickTimePlayer::Frame</a><br />
+Class <a href="QuickTimePlayer/Hotspot.html" class="link">OSA::QuickTimePlayer::Hotspot</a><br />
+Class <a href="QuickTimePlayer/InternetLocation.html" class="link">OSA::QuickTimePlayer::InternetLocation</a><br />
+Class <a href="QuickTimePlayer/Item.html" class="link">OSA::QuickTimePlayer::Item</a><br />
+Class <a href="QuickTimePlayer/Node.html" class="link">OSA::QuickTimePlayer::Node</a><br />
+Class <a href="QuickTimePlayer/Palette.html" class="link">OSA::QuickTimePlayer::Palette</a><br />
+Class <a href="QuickTimePlayer/RecentItem.html" class="link">OSA::QuickTimePlayer::RecentItem</a><br />
+Class <a href="QuickTimePlayer/Recording.html" class="link">OSA::QuickTimePlayer::Recording</a><br />
+Class <a href="QuickTimePlayer/RgbColor.html" class="link">OSA::QuickTimePlayer::RgbColor</a><br />
+Class <a href="QuickTimePlayer/Stream.html" class="link">OSA::QuickTimePlayer::Stream</a><br />
+Class <a href="QuickTimePlayer/TextFrame.html" class="link">OSA::QuickTimePlayer::TextFrame</a><br />
+Class <a href="QuickTimePlayer/Track.html" class="link">OSA::QuickTimePlayer::Track</a><br />
+Class <a href="QuickTimePlayer/Window.html" class="link">OSA::QuickTimePlayer::Window</a><br />
+
+    </div>
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

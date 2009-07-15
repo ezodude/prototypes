@@ -1,0 +1,1778 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: OSA::QuickTimePlayer::Track</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">OSA::QuickTimePlayer::Track</td>
+        </tr>
+<!--
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../../files/var/folders/yQ/yQVxIvSvFDW8bmNDYFpjg++++TI/-Tmp-/QuickTime Player-0-25765_rb.html">
+                /var/folders/yQ/yQVxIvSvFDW8bmNDYFpjg++++TI/-Tmp-/QuickTime Player-0-25765.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+-->
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+                <a href="Item.html">
+                OSA::QuickTimePlayer::Item
+               </a>
+            </td>
+        </tr>
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+A track in a QuickTime movie.
+</p>
+
+    </div>
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000038">alternate</a>&nbsp;&nbsp;
+      <a href="#M000068">annotations</a>&nbsp;&nbsp;
+      <a href="#M000023">audio_channel_count</a>&nbsp;&nbsp;
+      <a href="#M000046">audio_characteristic?</a>&nbsp;&nbsp;
+      <a href="#M000045">audio_sample_rate</a>&nbsp;&nbsp;
+      <a href="#M000052">audio_sample_size</a>&nbsp;&nbsp;
+      <a href="#M000014">bass_gain</a>&nbsp;&nbsp;
+      <a href="#M000015">bass_gain=</a>&nbsp;&nbsp;
+      <a href="#M000036">chapterlist</a>&nbsp;&nbsp;
+      <a href="#M000037">chapterlist=</a>&nbsp;&nbsp;
+      <a href="#M000072">chapters</a>&nbsp;&nbsp;
+      <a href="#M000057">contents</a>&nbsp;&nbsp;
+      <a href="#M000058">contents=</a>&nbsp;&nbsp;
+      <a href="#M000055">current_matrix</a>&nbsp;&nbsp;
+      <a href="#M000056">current_matrix=</a>&nbsp;&nbsp;
+      <a href="#M000051">data_format</a>&nbsp;&nbsp;
+      <a href="#M000013">data_rate</a>&nbsp;&nbsp;
+      <a href="#M000022">data_size</a>&nbsp;&nbsp;
+      <a href="#M000012">deinterlace_fields=</a>&nbsp;&nbsp;
+      <a href="#M000011">deinterlace_fields?</a>&nbsp;&nbsp;
+      <a href="#M000029">dimensions</a>&nbsp;&nbsp;
+      <a href="#M000030">dimensions=</a>&nbsp;&nbsp;
+      <a href="#M000064">duration</a>&nbsp;&nbsp;
+      <a href="#M000044">enabled=</a>&nbsp;&nbsp;
+      <a href="#M000043">enabled?</a>&nbsp;&nbsp;
+      <a href="#M000069">frames</a>&nbsp;&nbsp;
+      <a href="#M000021">high_quality=</a>&nbsp;&nbsp;
+      <a href="#M000020">high_quality?</a>&nbsp;&nbsp;
+      <a href="#M000009">href</a>&nbsp;&nbsp;
+      <a href="#M000010">href=</a>&nbsp;&nbsp;
+      <a href="#M000042">id2</a>&nbsp;&nbsp;
+      <a href="#M000053">index</a>&nbsp;&nbsp;
+      <a href="#M000019">is_video_gray_scale?</a>&nbsp;&nbsp;
+      <a href="#M000028">kind</a>&nbsp;&nbsp;
+      <a href="#M000026">language</a>&nbsp;&nbsp;
+      <a href="#M000027">language=</a>&nbsp;&nbsp;
+      <a href="#M000066">layer</a>&nbsp;&nbsp;
+      <a href="#M000067">layer=</a>&nbsp;&nbsp;
+      <a href="#M000040">mask</a>&nbsp;&nbsp;
+      <a href="#M000041">mask=</a>&nbsp;&nbsp;
+      <a href="#M000007">name</a>&nbsp;&nbsp;
+      <a href="#M000008">name=</a>&nbsp;&nbsp;
+      <a href="#M000054">natural_dimensions</a>&nbsp;&nbsp;
+      <a href="#M000018">never_purge=</a>&nbsp;&nbsp;
+      <a href="#M000017">never_purge?</a>&nbsp;&nbsp;
+      <a href="#M000031">operation_color</a>&nbsp;&nbsp;
+      <a href="#M000032">operation_color=</a>&nbsp;&nbsp;
+      <a href="#M000062">position</a>&nbsp;&nbsp;
+      <a href="#M000063">position=</a>&nbsp;&nbsp;
+      <a href="#M000061">preload=</a>&nbsp;&nbsp;
+      <a href="#M000060">preload?</a>&nbsp;&nbsp;
+      <a href="#M000050">single_field=</a>&nbsp;&nbsp;
+      <a href="#M000049">single_field?</a>&nbsp;&nbsp;
+      <a href="#M000005">sound_balance</a>&nbsp;&nbsp;
+      <a href="#M000006">sound_balance=</a>&nbsp;&nbsp;
+      <a href="#M000003">sound_volume</a>&nbsp;&nbsp;
+      <a href="#M000004">sound_volume=</a>&nbsp;&nbsp;
+      <a href="#M000001">start_time</a>&nbsp;&nbsp;
+      <a href="#M000002">start_time=</a>&nbsp;&nbsp;
+      <a href="#M000065">streaming_bit_rate</a>&nbsp;&nbsp;
+      <a href="#M000039">streaming_quality</a>&nbsp;&nbsp;
+      <a href="#M000070">streams</a>&nbsp;&nbsp;
+      <a href="#M000071">text_frames</a>&nbsp;&nbsp;
+      <a href="#M000024">transfer_mode</a>&nbsp;&nbsp;
+      <a href="#M000025">transfer_mode=</a>&nbsp;&nbsp;
+      <a href="#M000047">transparency</a>&nbsp;&nbsp;
+      <a href="#M000048">transparency=</a>&nbsp;&nbsp;
+      <a href="#M000034">treble_gain</a>&nbsp;&nbsp;
+      <a href="#M000035">treble_gain=</a>&nbsp;&nbsp;
+      <a href="#M000033">type2</a>&nbsp;&nbsp;
+      <a href="#M000016">video_depth</a>&nbsp;&nbsp;
+      <a href="#M000059">visual_characteristic?</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000038" class="method-detail">
+        <a name="M000038"></a>
+
+        <div class="method-heading">
+          <span class="method-name">alternate<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000038">alternate</a> property &#8212; the <a
+href="Track.html#M000038">alternate</a> for this track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as list of track.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000068" class="method-detail">
+        <a name="M000068"></a>
+
+        <div class="method-heading">
+          <span class="method-name">annotations<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000068">annotations</a> associated with this
+object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Annotation.html">OSA::QuickTimePlayer::Annotation</a>
+objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000023" class="method-detail">
+        <a name="M000023"></a>
+
+        <div class="method-heading">
+          <span class="method-name">audio_channel_count<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the audio channel count property &#8212; the number of channels in the
+audio.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000046" class="method-detail">
+        <a name="M000046"></a>
+
+        <div class="method-heading">
+          <span class="method-name">audio_characteristic?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the audio characteristic property &#8212; can the track be heard?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000045" class="method-detail">
+        <a name="M000045"></a>
+
+        <div class="method-heading">
+          <span class="method-name">audio_sample_rate<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the audio sample rate property &#8212; the sample rate of the audio in
+kHz.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000052" class="method-detail">
+        <a name="M000052"></a>
+
+        <div class="method-heading">
+          <span class="method-name">audio_sample_size<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the audio sample size property &#8212; the size of uncompressed audio
+samples in bits.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000014" class="method-detail">
+        <a name="M000014"></a>
+
+        <div class="method-heading">
+          <span class="method-name">bass_gain<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the bass gain property &#8212; the bass setting for the track
+(-256..256) (not saved with movie).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000015" class="method-detail">
+        <a name="M000015"></a>
+
+        <div class="method-heading">
+          <span class="method-name">bass_gain=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the bass gain property &#8212; the bass setting for the track
+(-256..256) (not saved with movie).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000036" class="method-detail">
+        <a name="M000036"></a>
+
+        <div class="method-heading">
+          <span class="method-name">chapterlist<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000036">chapterlist</a> property &#8212; text
+track to use as chapter list for this track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as list of track.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000037" class="method-detail">
+        <a name="M000037"></a>
+
+        <div class="method-heading">
+          <span class="method-name">chapterlist=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Track.html#M000036">chapterlist</a> property &#8212; text
+track to use as chapter list for this track.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as list of track.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000072" class="method-detail">
+        <a name="M000072"></a>
+
+        <div class="method-heading">
+          <span class="method-name">chapters<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000072">chapters</a> associated with this
+object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Chapter.html">OSA::QuickTimePlayer::Chapter</a>
+objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000057" class="method-detail">
+        <a name="M000057"></a>
+
+        <div class="method-heading">
+          <span class="method-name">contents<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000057">contents</a> property &#8212; the <a
+href="Track.html#M000057">contents</a> of the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as any.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000058" class="method-detail">
+        <a name="M000058"></a>
+
+        <div class="method-heading">
+          <span class="method-name">contents=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Track.html#M000057">contents</a> property &#8212; the <a
+href="Track.html#M000057">contents</a> of the track.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as any.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000055" class="method-detail">
+        <a name="M000055"></a>
+
+        <div class="method-heading">
+          <span class="method-name">current_matrix<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the current matrix property &#8212; the matrix of the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as list of real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000056" class="method-detail">
+        <a name="M000056"></a>
+
+        <div class="method-heading">
+          <span class="method-name">current_matrix=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the current matrix property &#8212; the matrix of the track.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as list of real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000051" class="method-detail">
+        <a name="M000051"></a>
+
+        <div class="method-heading">
+          <span class="method-name">data_format<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the data format property &#8212; the data format.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000013" class="method-detail">
+        <a name="M000013"></a>
+
+        <div class="method-heading">
+          <span class="method-name">data_rate<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the data rate property &#8212; the data rate (bytes/sec) of the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000022" class="method-detail">
+        <a name="M000022"></a>
+
+        <div class="method-heading">
+          <span class="method-name">data_size<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the data size property &#8212; the data size (in bytes) of the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000012" class="method-detail">
+        <a name="M000012"></a>
+
+        <div class="method-heading">
+          <span class="method-name">deinterlace_fields=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the deinterlace fields property &#8212; is the visual track
+deinterlaced?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000011" class="method-detail">
+        <a name="M000011"></a>
+
+        <div class="method-heading">
+          <span class="method-name">deinterlace_fields?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the deinterlace fields property &#8212; is the visual track
+deinterlaced?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000029" class="method-detail">
+        <a name="M000029"></a>
+
+        <div class="method-heading">
+          <span class="method-name">dimensions<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000029">dimensions</a> property &#8212; the
+current <a href="Track.html#M000029">dimensions</a> of the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as point.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000030" class="method-detail">
+        <a name="M000030"></a>
+
+        <div class="method-heading">
+          <span class="method-name">dimensions=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Track.html#M000029">dimensions</a> property &#8212; the
+current <a href="Track.html#M000029">dimensions</a> of the track.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as point.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000064" class="method-detail">
+        <a name="M000064"></a>
+
+        <div class="method-heading">
+          <span class="method-name">duration<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000064">duration</a> property &#8212; the <a
+href="Track.html#M000064">duration</a> of the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000044" class="method-detail">
+        <a name="M000044"></a>
+
+        <div class="method-heading">
+          <span class="method-name">enabled=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the enabled property &#8212; should this track be used when the movie
+is playing?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000043" class="method-detail">
+        <a name="M000043"></a>
+
+        <div class="method-heading">
+          <span class="method-name">enabled?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the enabled property &#8212; should this track be used when the movie
+is playing?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000069" class="method-detail">
+        <a name="M000069"></a>
+
+        <div class="method-heading">
+          <span class="method-name">frames<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000069">frames</a> associated with this
+object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Frame.html">OSA::QuickTimePlayer::Frame</a> objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000021" class="method-detail">
+        <a name="M000021"></a>
+
+        <div class="method-heading">
+          <span class="method-name">high_quality=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the high quality property &#8212; is the track high quality?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000020" class="method-detail">
+        <a name="M000020"></a>
+
+        <div class="method-heading">
+          <span class="method-name">high_quality?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the high quality property &#8212; is the track high quality?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000009" class="method-detail">
+        <a name="M000009"></a>
+
+        <div class="method-heading">
+          <span class="method-name">href<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000009">href</a> property &#8212; the
+internet location to open when clicking on the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000010" class="method-detail">
+        <a name="M000010"></a>
+
+        <div class="method-heading">
+          <span class="method-name">href=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Track.html#M000009">href</a> property &#8212; the
+internet location to open when clicking on the track.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000042" class="method-detail">
+        <a name="M000042"></a>
+
+        <div class="method-heading">
+          <span class="method-name">id2<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the id property &#8212; the unique identifier for this track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000053" class="method-detail">
+        <a name="M000053"></a>
+
+        <div class="method-heading">
+          <span class="method-name">index<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000053">index</a> property &#8212; the <a
+href="Track.html#M000053">index</a> of the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000019" class="method-detail">
+        <a name="M000019"></a>
+
+        <div class="method-heading">
+          <span class="method-name">is_video_gray_scale?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the is video gray scale property &#8212; is the video gray scale?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000028" class="method-detail">
+        <a name="M000028"></a>
+
+        <div class="method-heading">
+          <span class="method-name">kind<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000028">kind</a> property &#8212; the <a
+href="Track.html#M000007">name</a> of the media in the track, in the
+current <a href="Track.html#M000026">language</a> (e.g.,
+&#8216;Sound&#8217;, &#8216;Video&#8217;, &#8216;Text&#8217;, &#8230;).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000026" class="method-detail">
+        <a name="M000026"></a>
+
+        <div class="method-heading">
+          <span class="method-name">language<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000026">language</a> property &#8212; the <a
+href="Track.html#M000026">language</a> of the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer or string.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000027" class="method-detail">
+        <a name="M000027"></a>
+
+        <div class="method-heading">
+          <span class="method-name">language=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Track.html#M000026">language</a> property &#8212; the <a
+href="Track.html#M000026">language</a> of the track.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer or string.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000066" class="method-detail">
+        <a name="M000066"></a>
+
+        <div class="method-heading">
+          <span class="method-name">layer<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000066">layer</a> property &#8212; the <a
+href="Track.html#M000066">layer</a> of the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000067" class="method-detail">
+        <a name="M000067"></a>
+
+        <div class="method-heading">
+          <span class="method-name">layer=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Track.html#M000066">layer</a> property &#8212; the <a
+href="Track.html#M000066">layer</a> of the track.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000040" class="method-detail">
+        <a name="M000040"></a>
+
+        <div class="method-heading">
+          <span class="method-name">mask<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000040">mask</a> property &#8212; the <a
+href="Track.html#M000040">mask</a> of the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as file.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000041" class="method-detail">
+        <a name="M000041"></a>
+
+        <div class="method-heading">
+          <span class="method-name">mask=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Track.html#M000040">mask</a> property &#8212; the <a
+href="Track.html#M000040">mask</a> of the track.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as file.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000007" class="method-detail">
+        <a name="M000007"></a>
+
+        <div class="method-heading">
+          <span class="method-name">name<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000007">name</a> property &#8212; the <a
+href="Track.html#M000007">name</a> of the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000008" class="method-detail">
+        <a name="M000008"></a>
+
+        <div class="method-heading">
+          <span class="method-name">name=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Track.html#M000007">name</a> property &#8212; the <a
+href="Track.html#M000007">name</a> of the track.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000054" class="method-detail">
+        <a name="M000054"></a>
+
+        <div class="method-heading">
+          <span class="method-name">natural_dimensions<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the natural <a href="Track.html#M000029">dimensions</a> property
+&#8212; the <a href="Track.html#M000029">dimensions</a> the track has when
+it is not scaled.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as point.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000018" class="method-detail">
+        <a name="M000018"></a>
+
+        <div class="method-heading">
+          <span class="method-name">never_purge=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the never purge property &#8212; never purge the track?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000017" class="method-detail">
+        <a name="M000017"></a>
+
+        <div class="method-heading">
+          <span class="method-name">never_purge?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the never purge property &#8212; never purge the track?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000031" class="method-detail">
+        <a name="M000031"></a>
+
+        <div class="method-heading">
+          <span class="method-name">operation_color<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the operation color property &#8212; the operation color of the track
+- not all transfer modes use this value.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as a <a
+href="RgbColor.html">OSA::QuickTimePlayer::RgbColor</a> object.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000032" class="method-detail">
+        <a name="M000032"></a>
+
+        <div class="method-heading">
+          <span class="method-name">operation_color=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the operation color property &#8212; the operation color of the track
+- not all transfer modes use this value.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as a <a
+href="RgbColor.html">OSA::QuickTimePlayer::RgbColor</a> object.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000062" class="method-detail">
+        <a name="M000062"></a>
+
+        <div class="method-heading">
+          <span class="method-name">position<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000062">position</a> property &#8212; the <a
+href="Track.html#M000062">position</a> of the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as point.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000063" class="method-detail">
+        <a name="M000063"></a>
+
+        <div class="method-heading">
+          <span class="method-name">position=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Track.html#M000062">position</a> property &#8212; the <a
+href="Track.html#M000062">position</a> of the track.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as point.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000061" class="method-detail">
+        <a name="M000061"></a>
+
+        <div class="method-heading">
+          <span class="method-name">preload=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the preload property &#8212; should the track be preloaded?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000060" class="method-detail">
+        <a name="M000060"></a>
+
+        <div class="method-heading">
+          <span class="method-name">preload?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the preload property &#8212; should the track be preloaded?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000050" class="method-detail">
+        <a name="M000050"></a>
+
+        <div class="method-heading">
+          <span class="method-name">single_field=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the single field property &#8212; is the visual track single field?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000049" class="method-detail">
+        <a name="M000049"></a>
+
+        <div class="method-heading">
+          <span class="method-name">single_field?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the single field property &#8212; is the visual track single field?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000005" class="method-detail">
+        <a name="M000005"></a>
+
+        <div class="method-heading">
+          <span class="method-name">sound_balance<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the sound balance property &#8212; the balance of the track
+(-128..128), where negative is left, 0 is center, and positive is right.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000006" class="method-detail">
+        <a name="M000006"></a>
+
+        <div class="method-heading">
+          <span class="method-name">sound_balance=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the sound balance property &#8212; the balance of the track
+(-128..128), where negative is left, 0 is center, and positive is right.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000003" class="method-detail">
+        <a name="M000003"></a>
+
+        <div class="method-heading">
+          <span class="method-name">sound_volume<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the sound volume property &#8212; the volume of the track (0..512),
+where 256 is 100%.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000004" class="method-detail">
+        <a name="M000004"></a>
+
+        <div class="method-heading">
+          <span class="method-name">sound_volume=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the sound volume property &#8212; the volume of the track (0..512),
+where 256 is 100%.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000001" class="method-detail">
+        <a name="M000001"></a>
+
+        <div class="method-heading">
+          <span class="method-name">start_time<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the start time property &#8212; the time delay before this track
+starts playing.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000002" class="method-detail">
+        <a name="M000002"></a>
+
+        <div class="method-heading">
+          <span class="method-name">start_time=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the start time property &#8212; the time delay before this track
+starts playing.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000065" class="method-detail">
+        <a name="M000065"></a>
+
+        <div class="method-heading">
+          <span class="method-name">streaming_bit_rate<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the streaming bit rate property &#8212; bit rate in bits/second for
+all <a href="Track.html#M000070">streams</a> in track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000039" class="method-detail">
+        <a name="M000039"></a>
+
+        <div class="method-heading">
+          <span class="method-name">streaming_quality<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the streaming quality property &#8212; percent of packets received for
+all <a href="Track.html#M000070">streams</a> in track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000070" class="method-detail">
+        <a name="M000070"></a>
+
+        <div class="method-heading">
+          <span class="method-name">streams<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000070">streams</a> associated with this
+object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Stream.html">OSA::QuickTimePlayer::Stream</a> objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000071" class="method-detail">
+        <a name="M000071"></a>
+
+        <div class="method-heading">
+          <span class="method-name">text_frames<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the text <a href="Track.html#M000069">frames</a> associated with this
+object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="TextFrame.html">OSA::QuickTimePlayer::TextFrame</a>
+objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000024" class="method-detail">
+        <a name="M000024"></a>
+
+        <div class="method-heading">
+          <span class="method-name">transfer_mode<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the transfer mode property &#8212; the transfer mode of the track.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as <a href="TRAN.html">OSA::QuickTimePlayer::TRAN</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000025" class="method-detail">
+        <a name="M000025"></a>
+
+        <div class="method-heading">
+          <span class="method-name">transfer_mode=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the transfer mode property &#8212; the transfer mode of the track.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as <a href="TRAN.html">OSA::QuickTimePlayer::TRAN</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000047" class="method-detail">
+        <a name="M000047"></a>
+
+        <div class="method-heading">
+          <span class="method-name">transparency<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Track.html#M000047">transparency</a> property &#8212; the
+<a href="Track.html#M000047">transparency</a> setting for the track (0..100
+percent), where 0 is totally opaque.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000048" class="method-detail">
+        <a name="M000048"></a>
+
+        <div class="method-heading">
+          <span class="method-name">transparency=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Track.html#M000047">transparency</a> property &#8212; the
+<a href="Track.html#M000047">transparency</a> setting for the track (0..100
+percent), where 0 is totally opaque.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000034" class="method-detail">
+        <a name="M000034"></a>
+
+        <div class="method-heading">
+          <span class="method-name">treble_gain<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the treble gain property &#8212; the treble setting for the track
+(-256..256) (not saved with movie).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000035" class="method-detail">
+        <a name="M000035"></a>
+
+        <div class="method-heading">
+          <span class="method-name">treble_gain=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the treble gain property &#8212; the treble setting for the track
+(-256..256) (not saved with movie).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000033" class="method-detail">
+        <a name="M000033"></a>
+
+        <div class="method-heading">
+          <span class="method-name">type2<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the type property &#8212; the type of media in the track (e.g.,
+&#8216;soun&#8217;, &#8216;vide&#8217;, &#8216;text&#8217;, &#8230;).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000016" class="method-detail">
+        <a name="M000016"></a>
+
+        <div class="method-heading">
+          <span class="method-name">video_depth<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the video depth property &#8212; the color depth of the video.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000059" class="method-detail">
+        <a name="M000059"></a>
+
+        <div class="method-heading">
+          <span class="method-name">visual_characteristic?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the visual characteristic property &#8212; can the track be seen?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

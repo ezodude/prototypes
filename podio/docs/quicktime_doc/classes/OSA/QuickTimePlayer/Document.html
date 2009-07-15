@@ -1,0 +1,3335 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: OSA::QuickTimePlayer::Document</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">OSA::QuickTimePlayer::Document</td>
+        </tr>
+<!--
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../../files/var/folders/yQ/yQVxIvSvFDW8bmNDYFpjg++++TI/-Tmp-/QuickTime Player-0-25765_rb.html">
+                /var/folders/yQ/yQVxIvSvFDW8bmNDYFpjg++++TI/-Tmp-/QuickTime Player-0-25765.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+-->
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+                OSA::Element
+            </td>
+        </tr>
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+A document.
+</p>
+
+    </div>
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000398">annotations</a>&nbsp;&nbsp;
+      <a href="#M000385">aperture</a>&nbsp;&nbsp;
+      <a href="#M000386">aperture=</a>&nbsp;&nbsp;
+      <a href="#M000342">auto_close_when_done=</a>&nbsp;&nbsp;
+      <a href="#M000341">auto_close_when_done?</a>&nbsp;&nbsp;
+      <a href="#M000303">auto_play=</a>&nbsp;&nbsp;
+      <a href="#M000302">auto_play?</a>&nbsp;&nbsp;
+      <a href="#M000328">auto_present=</a>&nbsp;&nbsp;
+      <a href="#M000327">auto_present?</a>&nbsp;&nbsp;
+      <a href="#M000284">auto_quit_when_done=</a>&nbsp;&nbsp;
+      <a href="#M000283">auto_quit_when_done?</a>&nbsp;&nbsp;
+      <a href="#M000337">bass_gain</a>&nbsp;&nbsp;
+      <a href="#M000338">bass_gain=</a>&nbsp;&nbsp;
+      <a href="#M000399">chapters</a>&nbsp;&nbsp;
+      <a href="#M000352">close_when_done=</a>&nbsp;&nbsp;
+      <a href="#M000351">close_when_done?</a>&nbsp;&nbsp;
+      <a href="#M000330">controller_type</a>&nbsp;&nbsp;
+      <a href="#M000331">controller_type=</a>&nbsp;&nbsp;
+      <a href="#M000364">current_chapter</a>&nbsp;&nbsp;
+      <a href="#M000325">current_chapter_track</a>&nbsp;&nbsp;
+      <a href="#M000353">current_matrix</a>&nbsp;&nbsp;
+      <a href="#M000354">current_matrix=</a>&nbsp;&nbsp;
+      <a href="#M000374">current_node</a>&nbsp;&nbsp;
+      <a href="#M000375">current_node=</a>&nbsp;&nbsp;
+      <a href="#M000311">current_time</a>&nbsp;&nbsp;
+      <a href="#M000312">current_time=</a>&nbsp;&nbsp;
+      <a href="#M000391">data_rate</a>&nbsp;&nbsp;
+      <a href="#M000343">data_size</a>&nbsp;&nbsp;
+      <a href="#M000371">default_node</a>&nbsp;&nbsp;
+      <a href="#M000334">dimensions</a>&nbsp;&nbsp;
+      <a href="#M000335">dimensions=</a>&nbsp;&nbsp;
+      <a href="#M000350">display_state</a>&nbsp;&nbsp;
+      <a href="#M000292">done?</a>&nbsp;&nbsp;
+      <a href="#M000322">duration</a>&nbsp;&nbsp;
+      <a href="#M000381">fast_start?</a>&nbsp;&nbsp;
+      <a href="#M000308">field_of_view</a>&nbsp;&nbsp;
+      <a href="#M000309">field_of_view=</a>&nbsp;&nbsp;
+      <a href="#M000362">field_of_view_range</a>&nbsp;&nbsp;
+      <a href="#M000285">href</a>&nbsp;&nbsp;
+      <a href="#M000286">href=</a>&nbsp;&nbsp;
+      <a href="#M000397">id2</a>&nbsp;&nbsp;
+      <a href="#M000378">index</a>&nbsp;&nbsp;
+      <a href="#M000400">internet_locations</a>&nbsp;&nbsp;
+      <a href="#M000306">language</a>&nbsp;&nbsp;
+      <a href="#M000307">language=</a>&nbsp;&nbsp;
+      <a href="#M000347">live_stream?</a>&nbsp;&nbsp;
+      <a href="#M000336">load_state</a>&nbsp;&nbsp;
+      <a href="#M000326">local_playback?</a>&nbsp;&nbsp;
+      <a href="#M000377">looping=</a>&nbsp;&nbsp;
+      <a href="#M000376">looping?</a>&nbsp;&nbsp;
+      <a href="#M000317">max_time_loaded</a>&nbsp;&nbsp;
+      <a href="#M000382">modified2?</a>&nbsp;&nbsp;
+      <a href="#M000272">modified?</a>&nbsp;&nbsp;
+      <a href="#M000294">muted=</a>&nbsp;&nbsp;
+      <a href="#M000293">muted?</a>&nbsp;&nbsp;
+      <a href="#M000270">name</a>&nbsp;&nbsp;
+      <a href="#M000344">name2</a>&nbsp;&nbsp;
+      <a href="#M000271">name=</a>&nbsp;&nbsp;
+      <a href="#M000323">natural_dimensions</a>&nbsp;&nbsp;
+      <a href="#M000401">nodes</a>&nbsp;&nbsp;
+      <a href="#M000408">nudge</a>&nbsp;&nbsp;
+      <a href="#M000310">original_file</a>&nbsp;&nbsp;
+      <a href="#M000333">palindrome=</a>&nbsp;&nbsp;
+      <a href="#M000332">palindrome?</a>&nbsp;&nbsp;
+      <a href="#M000313">pan_angle</a>&nbsp;&nbsp;
+      <a href="#M000314">pan_angle=</a>&nbsp;&nbsp;
+      <a href="#M000392">pan_range</a>&nbsp;&nbsp;
+      <a href="#M000295">pan_tilt_speed</a>&nbsp;&nbsp;
+      <a href="#M000296">pan_tilt_speed=</a>&nbsp;&nbsp;
+      <a href="#M000273">path</a>&nbsp;&nbsp;
+      <a href="#M000274">path=</a>&nbsp;&nbsp;
+      <a href="#M000404">play</a>&nbsp;&nbsp;
+      <a href="#M000396">play_all_frames=</a>&nbsp;&nbsp;
+      <a href="#M000395">play_all_frames?</a>&nbsp;&nbsp;
+      <a href="#M000305">play_selection_only=</a>&nbsp;&nbsp;
+      <a href="#M000304">play_selection_only?</a>&nbsp;&nbsp;
+      <a href="#M000363">playing?</a>&nbsp;&nbsp;
+      <a href="#M000369">plugin_settings</a>&nbsp;&nbsp;
+      <a href="#M000370">plugin_settings=</a>&nbsp;&nbsp;
+      <a href="#M000379">poster_frame_time</a>&nbsp;&nbsp;
+      <a href="#M000380">poster_frame_time=</a>&nbsp;&nbsp;
+      <a href="#M000275">preferred_rate</a>&nbsp;&nbsp;
+      <a href="#M000276">preferred_rate=</a>&nbsp;&nbsp;
+      <a href="#M000318">presentation_background_color</a>&nbsp;&nbsp;
+      <a href="#M000319">presentation_background_color=</a>&nbsp;&nbsp;
+      <a href="#M000288">presentation_mode</a>&nbsp;&nbsp;
+      <a href="#M000289">presentation_mode=</a>&nbsp;&nbsp;
+      <a href="#M000383">presentation_size</a>&nbsp;&nbsp;
+      <a href="#M000384">presentation_size=</a>&nbsp;&nbsp;
+      <a href="#M000315">preview</a>&nbsp;&nbsp;
+      <a href="#M000316">preview=</a>&nbsp;&nbsp;
+      <a href="#M000373">quit_when_done=</a>&nbsp;&nbsp;
+      <a href="#M000372">quit_when_done?</a>&nbsp;&nbsp;
+      <a href="#M000290">rate</a>&nbsp;&nbsp;
+      <a href="#M000291">rate=</a>&nbsp;&nbsp;
+      <a href="#M000349">savable=</a>&nbsp;&nbsp;
+      <a href="#M000348">savable?</a>&nbsp;&nbsp;
+      <a href="#M000405">save_export_settings</a>&nbsp;&nbsp;
+      <a href="#M000406">save_self_contained</a>&nbsp;&nbsp;
+      <a href="#M000365">scale</a>&nbsp;&nbsp;
+      <a href="#M000366">scale=</a>&nbsp;&nbsp;
+      <a href="#M000387">selection_duration</a>&nbsp;&nbsp;
+      <a href="#M000388">selection_duration=</a>&nbsp;&nbsp;
+      <a href="#M000355">selection_end</a>&nbsp;&nbsp;
+      <a href="#M000356">selection_end=</a>&nbsp;&nbsp;
+      <a href="#M000389">selection_start</a>&nbsp;&nbsp;
+      <a href="#M000390">selection_start=</a>&nbsp;&nbsp;
+      <a href="#M000280">show_detailed_movie_info_window=</a>&nbsp;&nbsp;
+      <a href="#M000279">show_detailed_movie_info_window?</a>&nbsp;&nbsp;
+      <a href="#M000358">show_hot_spots=</a>&nbsp;&nbsp;
+      <a href="#M000357">show_hot_spots?</a>&nbsp;&nbsp;
+      <a href="#M000301">show_movie_info_window=</a>&nbsp;&nbsp;
+      <a href="#M000300">show_movie_info_window?</a>&nbsp;&nbsp;
+      <a href="#M000339">sound_balance</a>&nbsp;&nbsp;
+      <a href="#M000340">sound_balance=</a>&nbsp;&nbsp;
+      <a href="#M000359">sound_volume</a>&nbsp;&nbsp;
+      <a href="#M000360">sound_volume=</a>&nbsp;&nbsp;
+      <a href="#M000297">stored_stream?</a>&nbsp;&nbsp;
+      <a href="#M000361">streaming_status_code</a>&nbsp;&nbsp;
+      <a href="#M000324">streaming_status_message</a>&nbsp;&nbsp;
+      <a href="#M000281">tilt_angle</a>&nbsp;&nbsp;
+      <a href="#M000282">tilt_angle=</a>&nbsp;&nbsp;
+      <a href="#M000287">tilt_range</a>&nbsp;&nbsp;
+      <a href="#M000329">time_scale</a>&nbsp;&nbsp;
+      <a href="#M000402">tracks</a>&nbsp;&nbsp;
+      <a href="#M000393">treble_gain</a>&nbsp;&nbsp;
+      <a href="#M000394">treble_gain=</a>&nbsp;&nbsp;
+      <a href="#M000320">video_brightness_adjustment</a>&nbsp;&nbsp;
+      <a href="#M000321">video_brightness_adjustment=</a>&nbsp;&nbsp;
+      <a href="#M000345">video_color_adjustment</a>&nbsp;&nbsp;
+      <a href="#M000346">video_color_adjustment=</a>&nbsp;&nbsp;
+      <a href="#M000298">video_contrast_adjustment</a>&nbsp;&nbsp;
+      <a href="#M000299">video_contrast_adjustment=</a>&nbsp;&nbsp;
+      <a href="#M000367">video_tint_adjustment</a>&nbsp;&nbsp;
+      <a href="#M000368">video_tint_adjustment=</a>&nbsp;&nbsp;
+      <a href="#M000403">windows</a>&nbsp;&nbsp;
+      <a href="#M000407">zoom</a>&nbsp;&nbsp;
+      <a href="#M000277">zoom_rate</a>&nbsp;&nbsp;
+      <a href="#M000278">zoom_rate=</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000398" class="method-detail">
+        <a name="M000398"></a>
+
+        <div class="method-heading">
+          <span class="method-name">annotations<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000398">annotations</a> associated with
+this object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Annotation.html">OSA::QuickTimePlayer::Annotation</a>
+objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000385" class="method-detail">
+        <a name="M000385"></a>
+
+        <div class="method-heading">
+          <span class="method-name">aperture<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000385">aperture</a> property &#8212; the
+<a href="Document.html#M000385">aperture</a> mode of the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as <a href="APER.html">OSA::QuickTimePlayer::APER</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000386" class="method-detail">
+        <a name="M000386"></a>
+
+        <div class="method-heading">
+          <span class="method-name">aperture=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Document.html#M000385">aperture</a> property &#8212; the
+<a href="Document.html#M000385">aperture</a> mode of the movie.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as <a href="APER.html">OSA::QuickTimePlayer::APER</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000342" class="method-detail">
+        <a name="M000342"></a>
+
+        <div class="method-heading">
+          <span class="method-name">auto_close_when_done=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the auto close when done property &#8212; will the movie automatically
+close when done <a href="Document.html#M000363">playing?</a> (saved with
+movie).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000341" class="method-detail">
+        <a name="M000341"></a>
+
+        <div class="method-heading">
+          <span class="method-name">auto_close_when_done?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the auto close when done property &#8212; will the movie automatically
+close when done <a href="Document.html#M000363">playing?</a> (saved with
+movie).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000303" class="method-detail">
+        <a name="M000303"></a>
+
+        <div class="method-heading">
+          <span class="method-name">auto_play=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the auto <a href="Document.html#M000404">play</a> property &#8212;
+will the movie automatically start <a
+href="Document.html#M000363">playing?</a> (saved with movie).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000302" class="method-detail">
+        <a name="M000302"></a>
+
+        <div class="method-heading">
+          <span class="method-name">auto_play?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the auto <a href="Document.html#M000404">play</a> property &#8212;
+will the movie automatically start <a
+href="Document.html#M000363">playing?</a> (saved with movie).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000328" class="method-detail">
+        <a name="M000328"></a>
+
+        <div class="method-heading">
+          <span class="method-name">auto_present=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the auto present property &#8212; will the movie automatically start
+presenting? (saved with movie).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000327" class="method-detail">
+        <a name="M000327"></a>
+
+        <div class="method-heading">
+          <span class="method-name">auto_present?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the auto present property &#8212; will the movie automatically start
+presenting? (saved with movie).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000284" class="method-detail">
+        <a name="M000284"></a>
+
+        <div class="method-heading">
+          <span class="method-name">auto_quit_when_done=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the auto quit when done property &#8212; will the player automatically
+quit when done <a href="Document.html#M000363">playing?</a> (saved with
+movie).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000283" class="method-detail">
+        <a name="M000283"></a>
+
+        <div class="method-heading">
+          <span class="method-name">auto_quit_when_done?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the auto quit when done property &#8212; will the player automatically
+quit when done <a href="Document.html#M000363">playing?</a> (saved with
+movie).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000337" class="method-detail">
+        <a name="M000337"></a>
+
+        <div class="method-heading">
+          <span class="method-name">bass_gain<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the bass gain property &#8212; the bass setting for the track
+(-256..256) (not saved with movie).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000338" class="method-detail">
+        <a name="M000338"></a>
+
+        <div class="method-heading">
+          <span class="method-name">bass_gain=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the bass gain property &#8212; the bass setting for the track
+(-256..256) (not saved with movie).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000399" class="method-detail">
+        <a name="M000399"></a>
+
+        <div class="method-heading">
+          <span class="method-name">chapters<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000399">chapters</a> associated with this
+object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Chapter.html">OSA::QuickTimePlayer::Chapter</a>
+objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000352" class="method-detail">
+        <a name="M000352"></a>
+
+        <div class="method-heading">
+          <span class="method-name">close_when_done=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the close when done property &#8212; close the movie when it is done
+<a href="Document.html#M000363">playing?</a> (not saved with movie).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000351" class="method-detail">
+        <a name="M000351"></a>
+
+        <div class="method-heading">
+          <span class="method-name">close_when_done?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the close when done property &#8212; close the movie when it is done
+<a href="Document.html#M000363">playing?</a> (not saved with movie).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000330" class="method-detail">
+        <a name="M000330"></a>
+
+        <div class="method-heading">
+          <span class="method-name">controller_type<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the controller type property &#8212; the type of controller associated
+with the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as <a href="PLAY.html">OSA::QuickTimePlayer::PLAY</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000331" class="method-detail">
+        <a name="M000331"></a>
+
+        <div class="method-heading">
+          <span class="method-name">controller_type=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the controller type property &#8212; the type of controller associated
+with the movie.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as <a href="PLAY.html">OSA::QuickTimePlayer::PLAY</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000364" class="method-detail">
+        <a name="M000364"></a>
+
+        <div class="method-heading">
+          <span class="method-name">current_chapter<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the current chapter property &#8212; the chapter containing the
+current time.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as a <a
+href="Chapter.html">OSA::QuickTimePlayer::Chapter</a> object.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000325" class="method-detail">
+        <a name="M000325"></a>
+
+        <div class="method-heading">
+          <span class="method-name">current_chapter_track<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the current chapter track property &#8212; the currently active
+chapter track (may differ by <a href="Document.html#M000306">language</a>).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as a <a
+href="Track.html">OSA::QuickTimePlayer::Track</a> object.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000353" class="method-detail">
+        <a name="M000353"></a>
+
+        <div class="method-heading">
+          <span class="method-name">current_matrix<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the current matrix property &#8212; the matrix of the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as list of real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000354" class="method-detail">
+        <a name="M000354"></a>
+
+        <div class="method-heading">
+          <span class="method-name">current_matrix=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the current matrix property &#8212; the matrix of the movie.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as list of real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000374" class="method-detail">
+        <a name="M000374"></a>
+
+        <div class="method-heading">
+          <span class="method-name">current_node<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the current node property &#8212; the current node of the VR movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as a <a href="Node.html">OSA::QuickTimePlayer::Node</a>
+object.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000375" class="method-detail">
+        <a name="M000375"></a>
+
+        <div class="method-heading">
+          <span class="method-name">current_node=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the current node property &#8212; the current node of the VR movie.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as a <a
+href="Node.html">OSA::QuickTimePlayer::Node</a> object.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000311" class="method-detail">
+        <a name="M000311"></a>
+
+        <div class="method-heading">
+          <span class="method-name">current_time<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the current time property &#8212; the current time (can be set by <a
+href="Document.html#M000270">name</a> as well as number).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000312" class="method-detail">
+        <a name="M000312"></a>
+
+        <div class="method-heading">
+          <span class="method-name">current_time=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the current time property &#8212; the current time (can be set by <a
+href="Document.html#M000270">name</a> as well as number).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000391" class="method-detail">
+        <a name="M000391"></a>
+
+        <div class="method-heading">
+          <span class="method-name">data_rate<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the data <a href="Document.html#M000290">rate</a> property &#8212; the
+data <a href="Document.html#M000290">rate</a> (bytes/sec) of the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000343" class="method-detail">
+        <a name="M000343"></a>
+
+        <div class="method-heading">
+          <span class="method-name">data_size<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the data size property &#8212; the data size (in bytes) of the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000371" class="method-detail">
+        <a name="M000371"></a>
+
+        <div class="method-heading">
+          <span class="method-name">default_node<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the default node property &#8212; the default node of the VR movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as a <a href="Node.html">OSA::QuickTimePlayer::Node</a>
+object.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000334" class="method-detail">
+        <a name="M000334"></a>
+
+        <div class="method-heading">
+          <span class="method-name">dimensions<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000334">dimensions</a> property &#8212;
+the current <a href="Document.html#M000334">dimensions</a> of the movie,
+not including the controller.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as point.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000335" class="method-detail">
+        <a name="M000335"></a>
+
+        <div class="method-heading">
+          <span class="method-name">dimensions=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Document.html#M000334">dimensions</a> property &#8212;
+the current <a href="Document.html#M000334">dimensions</a> of the movie,
+not including the controller.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as point.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000350" class="method-detail">
+        <a name="M000350"></a>
+
+        <div class="method-heading">
+          <span class="method-name">display_state<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the display state property &#8212; the display state of the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as <a href="PRST.html">OSA::QuickTimePlayer::PRST</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000292" class="method-detail">
+        <a name="M000292"></a>
+
+        <div class="method-heading">
+          <span class="method-name">done?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the done property &#8212; is the movie done <a
+href="Document.html#M000363">playing?</a>
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000322" class="method-detail">
+        <a name="M000322"></a>
+
+        <div class="method-heading">
+          <span class="method-name">duration<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000322">duration</a> property &#8212; the
+<a href="Document.html#M000322">duration</a> of the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000381" class="method-detail">
+        <a name="M000381"></a>
+
+        <div class="method-heading">
+          <span class="method-name">fast_start?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the fast start property &#8212; is this a fast-start movie?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000308" class="method-detail">
+        <a name="M000308"></a>
+
+        <div class="method-heading">
+          <span class="method-name">field_of_view<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the field of view property &#8212; the field of view of the current
+node.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000309" class="method-detail">
+        <a name="M000309"></a>
+
+        <div class="method-heading">
+          <span class="method-name">field_of_view=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the field of view property &#8212; the field of view of the current
+node.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000362" class="method-detail">
+        <a name="M000362"></a>
+
+        <div class="method-heading">
+          <span class="method-name">field_of_view_range<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the field of view range property &#8212; minimum and maximum values
+for field of view value: given as { min, max }.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as list of real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000285" class="method-detail">
+        <a name="M000285"></a>
+
+        <div class="method-heading">
+          <span class="method-name">href<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000285">href</a> property &#8212; the
+internet location to open when clicking on the movie (overrides track
+hrefs).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000286" class="method-detail">
+        <a name="M000286"></a>
+
+        <div class="method-heading">
+          <span class="method-name">href=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Document.html#M000285">href</a> property &#8212; the
+internet location to open when clicking on the movie (overrides track
+hrefs).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000397" class="method-detail">
+        <a name="M000397"></a>
+
+        <div class="method-heading">
+          <span class="method-name">id2<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the id property &#8212; the ID of the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000378" class="method-detail">
+        <a name="M000378"></a>
+
+        <div class="method-heading">
+          <span class="method-name">index<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000378">index</a> property &#8212; the <a
+href="Document.html#M000378">index</a> of the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000400" class="method-detail">
+        <a name="M000400"></a>
+
+        <div class="method-heading">
+          <span class="method-name">internet_locations<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the internet locations associated with this object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a
+href="InternetLocation.html">OSA::QuickTimePlayer::InternetLocation</a>
+objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000306" class="method-detail">
+        <a name="M000306"></a>
+
+        <div class="method-heading">
+          <span class="method-name">language<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000306">language</a> property &#8212; the
+current <a href="Document.html#M000306">language</a> of the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer or string.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000307" class="method-detail">
+        <a name="M000307"></a>
+
+        <div class="method-heading">
+          <span class="method-name">language=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Document.html#M000306">language</a> property &#8212; the
+current <a href="Document.html#M000306">language</a> of the movie.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer or string.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000347" class="method-detail">
+        <a name="M000347"></a>
+
+        <div class="method-heading">
+          <span class="method-name">live_stream?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the live stream property &#8212; is this a live streaming movie?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000336" class="method-detail">
+        <a name="M000336"></a>
+
+        <div class="method-heading">
+          <span class="method-name">load_state<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the load state property &#8212; the current state of an asynchronously
+loading movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as <a href="LOAD.html">OSA::QuickTimePlayer::LOAD</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000326" class="method-detail">
+        <a name="M000326"></a>
+
+        <div class="method-heading">
+          <span class="method-name">local_playback?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the local playback property &#8212; is this a local movie?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000377" class="method-detail">
+        <a name="M000377"></a>
+
+        <div class="method-heading">
+          <span class="method-name">looping=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the looping property &#8212; keep playing the movie in a loop?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000376" class="method-detail">
+        <a name="M000376"></a>
+
+        <div class="method-heading">
+          <span class="method-name">looping?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the looping property &#8212; keep playing the movie in a loop?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000317" class="method-detail">
+        <a name="M000317"></a>
+
+        <div class="method-heading">
+          <span class="method-name">max_time_loaded<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the max time loaded property &#8212; the amount of time loaded in a
+fast start movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000382" class="method-detail">
+        <a name="M000382"></a>
+
+        <div class="method-heading">
+          <span class="method-name">modified2?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the modified property &#8212; has the document been modified since the
+last save?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000272" class="method-detail">
+        <a name="M000272"></a>
+
+        <div class="method-heading">
+          <span class="method-name">modified?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the modified property &#8212; has the document been modified since the
+last save?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000294" class="method-detail">
+        <a name="M000294"></a>
+
+        <div class="method-heading">
+          <span class="method-name">muted=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the muted property &#8212; is the movie <a
+href="Document.html#M000293">muted?</a>
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000293" class="method-detail">
+        <a name="M000293"></a>
+
+        <div class="method-heading">
+          <span class="method-name">muted?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the muted property &#8212; is the movie <a
+href="Document.html#M000293">muted?</a>
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000270" class="method-detail">
+        <a name="M000270"></a>
+
+        <div class="method-heading">
+          <span class="method-name">name<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000270">name</a> property &#8212; the
+document&#8216;s <a href="Document.html#M000270">name</a>.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000344" class="method-detail">
+        <a name="M000344"></a>
+
+        <div class="method-heading">
+          <span class="method-name">name2<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000270">name</a> property &#8212; the
+movie&#8216;s <a href="Document.html#M000270">name</a>.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000271" class="method-detail">
+        <a name="M000271"></a>
+
+        <div class="method-heading">
+          <span class="method-name">name=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Document.html#M000270">name</a> property &#8212; the
+document&#8216;s <a href="Document.html#M000270">name</a>.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000323" class="method-detail">
+        <a name="M000323"></a>
+
+        <div class="method-heading">
+          <span class="method-name">natural_dimensions<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the natural <a href="Document.html#M000334">dimensions</a> property
+&#8212; the <a href="Document.html#M000334">dimensions</a> the movie has
+when it is not scaled.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as point.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000401" class="method-detail">
+        <a name="M000401"></a>
+
+        <div class="method-heading">
+          <span class="method-name">nodes<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000401">nodes</a> associated with this
+object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Node.html">OSA::QuickTimePlayer::Node</a> objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000408" class="method-detail">
+        <a name="M000408"></a>
+
+        <div class="method-heading">
+          <span class="method-name">nudge(direction=nil)<br />
+nudge(:direction => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Nudge a QuickTime VR movie.
+</p>
+<table>
+<tr><td valign="top">direction:</td><td>The direction of the <a href="Document.html#M000408">nudge</a>. Optional.
+Can be passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000310" class="method-detail">
+        <a name="M000310"></a>
+
+        <div class="method-heading">
+          <span class="method-name">original_file<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the original file property &#8212; the file containing the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as file.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000333" class="method-detail">
+        <a name="M000333"></a>
+
+        <div class="method-heading">
+          <span class="method-name">palindrome=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the palindrome property &#8212; loop back and forth?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000332" class="method-detail">
+        <a name="M000332"></a>
+
+        <div class="method-heading">
+          <span class="method-name">palindrome?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the palindrome property &#8212; loop back and forth?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000313" class="method-detail">
+        <a name="M000313"></a>
+
+        <div class="method-heading">
+          <span class="method-name">pan_angle<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the pan angle property &#8212; the pan angle of the current node.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000314" class="method-detail">
+        <a name="M000314"></a>
+
+        <div class="method-heading">
+          <span class="method-name">pan_angle=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the pan angle property &#8212; the pan angle of the current node.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000392" class="method-detail">
+        <a name="M000392"></a>
+
+        <div class="method-heading">
+          <span class="method-name">pan_range<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the pan range property &#8212; minimum and maximum values for pan
+value: given as { min, max }.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as list of real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000295" class="method-detail">
+        <a name="M000295"></a>
+
+        <div class="method-heading">
+          <span class="method-name">pan_tilt_speed<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the pan tilt speed property &#8212; the <a
+href="Document.html#M000290">rate</a> at which panning will occur.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000296" class="method-detail">
+        <a name="M000296"></a>
+
+        <div class="method-heading">
+          <span class="method-name">pan_tilt_speed=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the pan tilt speed property &#8212; the <a
+href="Document.html#M000290">rate</a> at which panning will occur.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000273" class="method-detail">
+        <a name="M000273"></a>
+
+        <div class="method-heading">
+          <span class="method-name">path<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000273">path</a> property &#8212; the
+document&#8216;s <a href="Document.html#M000273">path</a>.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000274" class="method-detail">
+        <a name="M000274"></a>
+
+        <div class="method-heading">
+          <span class="method-name">path=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Document.html#M000273">path</a> property &#8212; the
+document&#8216;s <a href="Document.html#M000273">path</a>.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000404" class="method-detail">
+        <a name="M000404"></a>
+
+        <div class="method-heading">
+          <span class="method-name">play<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Play the movie.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000396" class="method-detail">
+        <a name="M000396"></a>
+
+        <div class="method-heading">
+          <span class="method-name">play_all_frames=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Document.html#M000404">play</a> all frames property
+&#8212; <a href="Document.html#M000404">play</a> every frame? (no audio
+will <a href="Document.html#M000404">play</a>).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000395" class="method-detail">
+        <a name="M000395"></a>
+
+        <div class="method-heading">
+          <span class="method-name">play_all_frames?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000404">play</a> all frames property
+&#8212; <a href="Document.html#M000404">play</a> every frame? (no audio
+will <a href="Document.html#M000404">play</a>).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000305" class="method-detail">
+        <a name="M000305"></a>
+
+        <div class="method-heading">
+          <span class="method-name">play_selection_only=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Document.html#M000404">play</a> selection only property
+&#8212; <a href="Document.html#M000404">play</a> the selection only?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000304" class="method-detail">
+        <a name="M000304"></a>
+
+        <div class="method-heading">
+          <span class="method-name">play_selection_only?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000404">play</a> selection only property
+&#8212; <a href="Document.html#M000404">play</a> the selection only?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000363" class="method-detail">
+        <a name="M000363"></a>
+
+        <div class="method-heading">
+          <span class="method-name">playing?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the playing property &#8212; is the movie <a
+href="Document.html#M000363">playing?</a>
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000369" class="method-detail">
+        <a name="M000369"></a>
+
+        <div class="method-heading">
+          <span class="method-name">plugin_settings<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the plugin settings property &#8212; the QuickTime Plugin settings
+stored in the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as list of text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000370" class="method-detail">
+        <a name="M000370"></a>
+
+        <div class="method-heading">
+          <span class="method-name">plugin_settings=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the plugin settings property &#8212; the QuickTime Plugin settings
+stored in the movie.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as list of text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000379" class="method-detail">
+        <a name="M000379"></a>
+
+        <div class="method-heading">
+          <span class="method-name">poster_frame_time<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the poster frame time property &#8212; the time of the poster frame
+for the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000380" class="method-detail">
+        <a name="M000380"></a>
+
+        <div class="method-heading">
+          <span class="method-name">poster_frame_time=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the poster frame time property &#8212; the time of the poster frame
+for the movie.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000275" class="method-detail">
+        <a name="M000275"></a>
+
+        <div class="method-heading">
+          <span class="method-name">preferred_rate<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the preferred <a href="Document.html#M000290">rate</a> property
+&#8212; the preferred <a href="Document.html#M000290">rate</a> of the
+movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000276" class="method-detail">
+        <a name="M000276"></a>
+
+        <div class="method-heading">
+          <span class="method-name">preferred_rate=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the preferred <a href="Document.html#M000290">rate</a> property
+&#8212; the preferred <a href="Document.html#M000290">rate</a> of the
+movie.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000318" class="method-detail">
+        <a name="M000318"></a>
+
+        <div class="method-heading">
+          <span class="method-name">presentation_background_color<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the presentation background color property &#8212; the background
+color (default is black).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as a <a
+href="RgbColor.html">OSA::QuickTimePlayer::RgbColor</a> object.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000319" class="method-detail">
+        <a name="M000319"></a>
+
+        <div class="method-heading">
+          <span class="method-name">presentation_background_color=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the presentation background color property &#8212; the background
+color (default is black).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as a <a
+href="RgbColor.html">OSA::QuickTimePlayer::RgbColor</a> object.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000288" class="method-detail">
+        <a name="M000288"></a>
+
+        <div class="method-heading">
+          <span class="method-name">presentation_mode<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the presentation mode property &#8212; mode in which the movie will be
+presented.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as <a href="PRMD.html">OSA::QuickTimePlayer::PRMD</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000289" class="method-detail">
+        <a name="M000289"></a>
+
+        <div class="method-heading">
+          <span class="method-name">presentation_mode=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the presentation mode property &#8212; mode in which the movie will be
+presented.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as <a href="PRMD.html">OSA::QuickTimePlayer::PRMD</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000383" class="method-detail">
+        <a name="M000383"></a>
+
+        <div class="method-heading">
+          <span class="method-name">presentation_size<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the presentation size property &#8212; size at which the movie will be
+presented.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as <a href="MVSZ.html">OSA::QuickTimePlayer::MVSZ</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000384" class="method-detail">
+        <a name="M000384"></a>
+
+        <div class="method-heading">
+          <span class="method-name">presentation_size=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the presentation size property &#8212; size at which the movie will be
+presented.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as <a href="MVSZ.html">OSA::QuickTimePlayer::MVSZ</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000315" class="method-detail">
+        <a name="M000315"></a>
+
+        <div class="method-heading">
+          <span class="method-name">preview<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000315">preview</a> property &#8212; start
+time and end time of the movie <a href="Document.html#M000315">preview</a>.
+Example: {0, 1200}.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as list of integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000316" class="method-detail">
+        <a name="M000316"></a>
+
+        <div class="method-heading">
+          <span class="method-name">preview=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Document.html#M000315">preview</a> property &#8212; start
+time and end time of the movie <a href="Document.html#M000315">preview</a>.
+Example: {0, 1200}.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as list of integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000373" class="method-detail">
+        <a name="M000373"></a>
+
+        <div class="method-heading">
+          <span class="method-name">quit_when_done=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the quit when done property &#8212; quit the application when this
+movie is done <a href="Document.html#M000363">playing?</a> (not saved with
+movie).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000372" class="method-detail">
+        <a name="M000372"></a>
+
+        <div class="method-heading">
+          <span class="method-name">quit_when_done?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the quit when done property &#8212; quit the application when this
+movie is done <a href="Document.html#M000363">playing?</a> (not saved with
+movie).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000290" class="method-detail">
+        <a name="M000290"></a>
+
+        <div class="method-heading">
+          <span class="method-name">rate<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000290">rate</a> property &#8212; the <a
+href="Document.html#M000290">rate</a> at which the movie is currently
+playing.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000291" class="method-detail">
+        <a name="M000291"></a>
+
+        <div class="method-heading">
+          <span class="method-name">rate=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Document.html#M000290">rate</a> property &#8212; the <a
+href="Document.html#M000290">rate</a> at which the movie is currently
+playing.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000349" class="method-detail">
+        <a name="M000349"></a>
+
+        <div class="method-heading">
+          <span class="method-name">savable=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the savable property &#8212; can the movie be saved?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000348" class="method-detail">
+        <a name="M000348"></a>
+
+        <div class="method-heading">
+          <span class="method-name">savable?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the savable property &#8212; can the movie be saved?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000405" class="method-detail">
+        <a name="M000405"></a>
+
+        <div class="method-heading">
+          <span class="method-name">save_export_settings(_for, to, replacing=nil)<br />
+save_export_settings(_for, to, :replacing => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Save an exporters settings.
+</p>
+<table>
+<tr><td valign="top">_for:</td><td>The desired file type.
+
+</td></tr>
+<tr><td valign="top">to:</td><td>The destination file.
+
+</td></tr>
+<tr><td valign="top">replacing:</td><td>Should the original file be deleted first? Optional. Can be passed as a
+Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000406" class="method-detail">
+        <a name="M000406"></a>
+
+        <div class="method-heading">
+          <span class="method-name">save_self_contained(_in)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Save a self-contained movie.
+</p>
+<table>
+<tr><td valign="top">_in:</td><td>The file in which to save the movie.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000365" class="method-detail">
+        <a name="M000365"></a>
+
+        <div class="method-heading">
+          <span class="method-name">scale<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000365">scale</a> property &#8212; the
+current <a href="Document.html#M000365">scale</a> of the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as <a href="MVSZ.html">OSA::QuickTimePlayer::MVSZ</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000366" class="method-detail">
+        <a name="M000366"></a>
+
+        <div class="method-heading">
+          <span class="method-name">scale=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Document.html#M000365">scale</a> property &#8212; the
+current <a href="Document.html#M000365">scale</a> of the movie.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as <a href="MVSZ.html">OSA::QuickTimePlayer::MVSZ</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000387" class="method-detail">
+        <a name="M000387"></a>
+
+        <div class="method-heading">
+          <span class="method-name">selection_duration<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the selection <a href="Document.html#M000322">duration</a> property
+&#8212; the <a href="Document.html#M000322">duration</a> of the movie
+selection.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000388" class="method-detail">
+        <a name="M000388"></a>
+
+        <div class="method-heading">
+          <span class="method-name">selection_duration=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the selection <a href="Document.html#M000322">duration</a> property
+&#8212; the <a href="Document.html#M000322">duration</a> of the movie
+selection.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000355" class="method-detail">
+        <a name="M000355"></a>
+
+        <div class="method-heading">
+          <span class="method-name">selection_end<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the selection end property &#8212; the end of the movie selection.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000356" class="method-detail">
+        <a name="M000356"></a>
+
+        <div class="method-heading">
+          <span class="method-name">selection_end=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the selection end property &#8212; the end of the movie selection.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000389" class="method-detail">
+        <a name="M000389"></a>
+
+        <div class="method-heading">
+          <span class="method-name">selection_start<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the selection start property &#8212; the start of the movie selection.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000390" class="method-detail">
+        <a name="M000390"></a>
+
+        <div class="method-heading">
+          <span class="method-name">selection_start=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the selection start property &#8212; the start of the movie selection.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000280" class="method-detail">
+        <a name="M000280"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_detailed_movie_info_window=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the show detailed movie info window property &#8212; show the movie
+property window.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000279" class="method-detail">
+        <a name="M000279"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_detailed_movie_info_window?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the show detailed movie info window property &#8212; show the movie
+property window.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000358" class="method-detail">
+        <a name="M000358"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_hot_spots=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the show hot spots property &#8212; should hotspots be shown?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000357" class="method-detail">
+        <a name="M000357"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_hot_spots?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the show hot spots property &#8212; should hotspots be shown?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000301" class="method-detail">
+        <a name="M000301"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_movie_info_window=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the show movie info window property &#8212; show the movie info
+window.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000300" class="method-detail">
+        <a name="M000300"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_movie_info_window?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the show movie info window property &#8212; show the movie info
+window.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000339" class="method-detail">
+        <a name="M000339"></a>
+
+        <div class="method-heading">
+          <span class="method-name">sound_balance<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the sound balance property &#8212; the balance of the movie
+(-128..128), where negative is left, 0 is center, and positive is right.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000340" class="method-detail">
+        <a name="M000340"></a>
+
+        <div class="method-heading">
+          <span class="method-name">sound_balance=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the sound balance property &#8212; the balance of the movie
+(-128..128), where negative is left, 0 is center, and positive is right.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000359" class="method-detail">
+        <a name="M000359"></a>
+
+        <div class="method-heading">
+          <span class="method-name">sound_volume<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the sound volume property &#8212; the sound volume of the movie
+(0..384), where 256 is 100%.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000360" class="method-detail">
+        <a name="M000360"></a>
+
+        <div class="method-heading">
+          <span class="method-name">sound_volume=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the sound volume property &#8212; the sound volume of the movie
+(0..384), where 256 is 100%.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000297" class="method-detail">
+        <a name="M000297"></a>
+
+        <div class="method-heading">
+          <span class="method-name">stored_stream?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the stored stream property &#8212; is this a stored streaming movie?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000361" class="method-detail">
+        <a name="M000361"></a>
+
+        <div class="method-heading">
+          <span class="method-name">streaming_status_code<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the streaming status code property &#8212; the streaming status code
+of the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000324" class="method-detail">
+        <a name="M000324"></a>
+
+        <div class="method-heading">
+          <span class="method-name">streaming_status_message<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the streaming status message property &#8212; the streaming status
+message of the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000281" class="method-detail">
+        <a name="M000281"></a>
+
+        <div class="method-heading">
+          <span class="method-name">tilt_angle<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the tilt angle property &#8212; the tilt angle of the current node.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000282" class="method-detail">
+        <a name="M000282"></a>
+
+        <div class="method-heading">
+          <span class="method-name">tilt_angle=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the tilt angle property &#8212; the tilt angle of the current node.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000287" class="method-detail">
+        <a name="M000287"></a>
+
+        <div class="method-heading">
+          <span class="method-name">tilt_range<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the tilt range property &#8212; minimum and maximum values for tilt
+value: given as { min, max }.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as list of real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000329" class="method-detail">
+        <a name="M000329"></a>
+
+        <div class="method-heading">
+          <span class="method-name">time_scale<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the time <a href="Document.html#M000365">scale</a> property &#8212;
+the time <a href="Document.html#M000365">scale</a> of the movie.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000402" class="method-detail">
+        <a name="M000402"></a>
+
+        <div class="method-heading">
+          <span class="method-name">tracks<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000402">tracks</a> associated with this
+object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Track.html">OSA::QuickTimePlayer::Track</a> objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000393" class="method-detail">
+        <a name="M000393"></a>
+
+        <div class="method-heading">
+          <span class="method-name">treble_gain<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the treble gain property &#8212; the treble setting for the movie
+(-256..256) (not saved with movie).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000394" class="method-detail">
+        <a name="M000394"></a>
+
+        <div class="method-heading">
+          <span class="method-name">treble_gain=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the treble gain property &#8212; the treble setting for the movie
+(-256..256) (not saved with movie).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as integer.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000320" class="method-detail">
+        <a name="M000320"></a>
+
+        <div class="method-heading">
+          <span class="method-name">video_brightness_adjustment<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the video brightness adjustment property &#8212; the adjustment to the
+video brightness (range is -1.0 to 1.0).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000321" class="method-detail">
+        <a name="M000321"></a>
+
+        <div class="method-heading">
+          <span class="method-name">video_brightness_adjustment=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the video brightness adjustment property &#8212; the adjustment to the
+video brightness (range is -1.0 to 1.0).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000345" class="method-detail">
+        <a name="M000345"></a>
+
+        <div class="method-heading">
+          <span class="method-name">video_color_adjustment<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the video color adjustment property &#8212; the adjustment to the
+video color.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000346" class="method-detail">
+        <a name="M000346"></a>
+
+        <div class="method-heading">
+          <span class="method-name">video_color_adjustment=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the video color adjustment property &#8212; the adjustment to the
+video color.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000298" class="method-detail">
+        <a name="M000298"></a>
+
+        <div class="method-heading">
+          <span class="method-name">video_contrast_adjustment<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the video contrast adjustment property &#8212; the adjustment to the
+video contrast (range is -1.0 to 1.0).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000299" class="method-detail">
+        <a name="M000299"></a>
+
+        <div class="method-heading">
+          <span class="method-name">video_contrast_adjustment=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the video contrast adjustment property &#8212; the adjustment to the
+video contrast (range is -1.0 to 1.0).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000367" class="method-detail">
+        <a name="M000367"></a>
+
+        <div class="method-heading">
+          <span class="method-name">video_tint_adjustment<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the video tint adjustment property &#8212; the adjustment to the video
+tint (range is -0.25 to 0.25).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000368" class="method-detail">
+        <a name="M000368"></a>
+
+        <div class="method-heading">
+          <span class="method-name">video_tint_adjustment=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the video tint adjustment property &#8212; the adjustment to the video
+tint (range is -0.25 to 0.25).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000403" class="method-detail">
+        <a name="M000403"></a>
+
+        <div class="method-heading">
+          <span class="method-name">windows<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000403">windows</a> associated with this
+object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Window.html">OSA::QuickTimePlayer::Window</a> objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000407" class="method-detail">
+        <a name="M000407"></a>
+
+        <div class="method-heading">
+          <span class="method-name">zoom(direction=nil)<br />
+zoom(:direction => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Zoom a QuickTime VR movie.
+</p>
+<table>
+<tr><td valign="top">direction:</td><td>The direction in which to <a href="Document.html#M000407">zoom</a>.
+Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000277" class="method-detail">
+        <a name="M000277"></a>
+
+        <div class="method-heading">
+          <span class="method-name">zoom_rate<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Document.html#M000407">zoom</a> <a
+href="Document.html#M000290">rate</a> property &#8212; the <a
+href="Document.html#M000290">rate</a> at which zooming will occur.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000278" class="method-detail">
+        <a name="M000278"></a>
+
+        <div class="method-heading">
+          <span class="method-name">zoom_rate=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Document.html#M000407">zoom</a> <a
+href="Document.html#M000290">rate</a> property &#8212; the <a
+href="Document.html#M000290">rate</a> at which zooming will occur.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be set, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

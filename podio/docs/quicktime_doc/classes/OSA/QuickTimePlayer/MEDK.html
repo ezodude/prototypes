@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: OSA::QuickTimePlayer::MEDK</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">OSA::QuickTimePlayer::MEDK</td>
+        </tr>
+<!--
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../../files/var/folders/yQ/yQVxIvSvFDW8bmNDYFpjg++++TI/-Tmp-/QuickTime Player-0-25765_rb.html">
+                /var/folders/yQ/yQVxIvSvFDW8bmNDYFpjg++++TI/-Tmp-/QuickTime Player-0-25765.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+-->
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+    <div id="constants-list">
+      <h3 class="section-bar">Constants</h3>
+
+      <div class="name-list">
+        <table summary="Constants">
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">VIDEO</td>
+          <td>=</td>
+          <td class="context-item-value">'vide'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+Video media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">SOUND</td>
+          <td>=</td>
+          <td class="context-item-value">'soun'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+Sound media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">TEXT</td>
+          <td>=</td>
+          <td class="context-item-value">'text'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+Text media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">BASE</td>
+          <td>=</td>
+          <td class="context-item-value">'gnrc'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+Base media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">STREAMING</td>
+          <td>=</td>
+          <td class="context-item-value">'strm'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+<a href="Stream.html">Stream</a> media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">MPEG</td>
+          <td>=</td>
+          <td class="context-item-value">'MPEG'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+MPEG media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">MPEG_AUDIO</td>
+          <td>=</td>
+          <td class="context-item-value">'m1a '</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+MPEG audio media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">MPEG_VIDEO</td>
+          <td>=</td>
+          <td class="context-item-value">'m1v '</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+MPEG video media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">MUSIC</td>
+          <td>=</td>
+          <td class="context-item-value">'musi'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+Music media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">TIMECODE</td>
+          <td>=</td>
+          <td class="context-item-value">'tmcd'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+Timecode media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">SPRITE</td>
+          <td>=</td>
+          <td class="context-item-value">'sprt'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+Sprite media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">FLASH</td>
+          <td>=</td>
+          <td class="context-item-value">'flsh'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+Flash media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">TWEEN</td>
+          <td>=</td>
+          <td class="context-item-value">'twen'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+Tween media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">C3D</td>
+          <td>=</td>
+          <td class="context-item-value">'qd3d'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+QuickDraw 3D media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">QUICKTIME_VR</td>
+          <td>=</td>
+          <td class="context-item-value">'qtvr'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+QuickTime VR media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">VR_PANORAMA</td>
+          <td>=</td>
+          <td class="context-item-value">'pano'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+QuickTime VR panorama media.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">VR_OBJECT</td>
+          <td>=</td>
+          <td class="context-item-value">'obje'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+QuickTime VR object media.
+
+</td>
+        </tr>
+        </table>
+      </div>
+    </div>
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

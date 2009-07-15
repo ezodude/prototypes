@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: OSA::QuickTimePlayer::LOAD</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">OSA::QuickTimePlayer::LOAD</td>
+        </tr>
+<!--
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../../files/var/folders/yQ/yQVxIvSvFDW8bmNDYFpjg++++TI/-Tmp-/QuickTime Player-0-25765_rb.html">
+                /var/folders/yQ/yQVxIvSvFDW8bmNDYFpjg++++TI/-Tmp-/QuickTime Player-0-25765.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+-->
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+    <div id="constants-list">
+      <h3 class="section-bar">Constants</h3>
+
+      <div class="name-list">
+        <table summary="Constants">
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">LOAD_STATE_UNKNOWN</td>
+          <td>=</td>
+          <td class="context-item-value">'lduk'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+The load state of the movie cannot be determined.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">LOAD_ERROR</td>
+          <td>=</td>
+          <td class="context-item-value">'lder'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+An error occurred which prevents the movie from loading.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">LOADING</td>
+          <td>=</td>
+          <td class="context-item-value">'ldng'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+The movie is loading, but is unusable in its current state.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">LOADED</td>
+          <td>=</td>
+          <td class="context-item-value">'lded'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+The movie has loaded, but some media is still loading.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">PLAYABLE</td>
+          <td>=</td>
+          <td class="context-item-value">'ldpl'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+The movie has loaded and sufficient media is available to begin playing.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">PLAYTHROUGH_OKAY</td>
+          <td>=</td>
+          <td class="context-item-value">'ldpt'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+The movie has loaded and remaining media should be avaiable when needed.
+
+</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">COMPLETE</td>
+          <td>=</td>
+          <td class="context-item-value">'ldcm'</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+The movie has loaded and all media is available.
+
+</td>
+        </tr>
+        </table>
+      </div>
+    </div>
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

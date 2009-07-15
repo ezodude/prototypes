@@ -1,0 +1,2420 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: OSA::QuickTimePlayer::Application</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">OSA::QuickTimePlayer::Application</td>
+        </tr>
+<!--
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../../files/var/folders/yQ/yQVxIvSvFDW8bmNDYFpjg++++TI/-Tmp-/QuickTime Player-0-25765_rb.html">
+                /var/folders/yQ/yQVxIvSvFDW8bmNDYFpjg++++TI/-Tmp-/QuickTime Player-0-25765.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+-->
+
+        <tr class="top-aligned-row">
+            <td><strong>Parent:</strong></td>
+            <td>
+                OSA::Element
+            </td>
+        </tr>
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+An application&#8216;s top level scripting object.
+</p>
+
+    </div>
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000198">activate</a>&nbsp;&nbsp;
+      <a href="#M000211">add</a>&nbsp;&nbsp;
+      <a href="#M000215">can_export?</a>&nbsp;&nbsp;
+      <a href="#M000212">clear</a>&nbsp;&nbsp;
+      <a href="#M000201">close</a>&nbsp;&nbsp;
+      <a href="#M000213">copy</a>&nbsp;&nbsp;
+      <a href="#M000202">count</a>&nbsp;&nbsp;
+      <a href="#M000214">cut</a>&nbsp;&nbsp;
+      <a href="#M000203">delete</a>&nbsp;&nbsp;
+      <a href="#M000158">documents</a>&nbsp;&nbsp;
+      <a href="#M000193">documents2</a>&nbsp;&nbsp;
+      <a href="#M000204">duplicate</a>&nbsp;&nbsp;
+      <a href="#M000205">exists?</a>&nbsp;&nbsp;
+      <a href="#M000216">export</a>&nbsp;&nbsp;
+      <a href="#M000192">favorites</a>&nbsp;&nbsp;
+      <a href="#M000217">find</a>&nbsp;&nbsp;
+      <a href="#M000218">flip_horizontal</a>&nbsp;&nbsp;
+      <a href="#M000219">flip_vertical</a>&nbsp;&nbsp;
+      <a href="#M000156">frontmost?</a>&nbsp;&nbsp;
+      <a href="#M000206">get</a>&nbsp;&nbsp;
+      <a href="#M000220">geturl</a>&nbsp;&nbsp;
+      <a href="#M000168">ignore_auto_play=</a>&nbsp;&nbsp;
+      <a href="#M000167">ignore_auto_play?</a>&nbsp;&nbsp;
+      <a href="#M000176">ignore_auto_present=</a>&nbsp;&nbsp;
+      <a href="#M000175">ignore_auto_present?</a>&nbsp;&nbsp;
+      <a href="#M000221">invert</a>&nbsp;&nbsp;
+      <a href="#M000207">make</a>&nbsp;&nbsp;
+      <a href="#M000208">move</a>&nbsp;&nbsp;
+      <a href="#M000155">name</a>&nbsp;&nbsp;
+      <a href="#M000245">new_audio_recording</a>&nbsp;&nbsp;
+      <a href="#M000246">new_movie_recording</a>&nbsp;&nbsp;
+      <a href="#M000166">only_front_movie_plays_sound=</a>&nbsp;&nbsp;
+      <a href="#M000165">only_front_movie_plays_sound?</a>&nbsp;&nbsp;
+      <a href="#M000197">open</a>&nbsp;&nbsp;
+      <a href="#M000222">open_image_sequence</a>&nbsp;&nbsp;
+      <a href="#M000223">open_location</a>&nbsp;&nbsp;
+      <a href="#M000170">open_movie_in_new_player=</a>&nbsp;&nbsp;
+      <a href="#M000169">open_movie_in_new_player?</a>&nbsp;&nbsp;
+      <a href="#M000224">paste</a>&nbsp;&nbsp;
+      <a href="#M000244">pause</a>&nbsp;&nbsp;
+      <a href="#M000181">play_movie_from_beginning_when_opened=</a>&nbsp;&nbsp;
+      <a href="#M000180">play_movie_from_beginning_when_opened?</a>&nbsp;&nbsp;
+      <a href="#M000172">play_sound_in_background=</a>&nbsp;&nbsp;
+      <a href="#M000171">play_sound_in_background?</a>&nbsp;&nbsp;
+      <a href="#M000225">present</a>&nbsp;&nbsp;
+      <a href="#M000199">print</a>&nbsp;&nbsp;
+      <a href="#M000164">quicktime_pro_installed?</a>&nbsp;&nbsp;
+      <a href="#M000179">quicktime_version</a>&nbsp;&nbsp;
+      <a href="#M000200">quit</a>&nbsp;&nbsp;
+      <a href="#M000194">recent_items</a>&nbsp;&nbsp;
+      <a href="#M000195">recordings</a>&nbsp;&nbsp;
+      <a href="#M000226">redo</a>&nbsp;&nbsp;
+      <a href="#M000227">replace</a>&nbsp;&nbsp;
+      <a href="#M000228">resize</a>&nbsp;&nbsp;
+      <a href="#M000229">rewind</a>&nbsp;&nbsp;
+      <a href="#M000230">rotate</a>&nbsp;&nbsp;
+      <a href="#M000231">rotate_left</a>&nbsp;&nbsp;
+      <a href="#M000232">rotate_right</a>&nbsp;&nbsp;
+      <a href="#M000209">save</a>&nbsp;&nbsp;
+      <a href="#M000247">save_reference_movie</a>&nbsp;&nbsp;
+      <a href="#M000233">select</a>&nbsp;&nbsp;
+      <a href="#M000234">select_all</a>&nbsp;&nbsp;
+      <a href="#M000235">select_none</a>&nbsp;&nbsp;
+      <a href="#M000210">set</a>&nbsp;&nbsp;
+      <a href="#M000178">show_av_controls_window=</a>&nbsp;&nbsp;
+      <a href="#M000177">show_av_controls_window?</a>&nbsp;&nbsp;
+      <a href="#M000163">show_closed_captioning_when_available=</a>&nbsp;&nbsp;
+      <a href="#M000162">show_closed_captioning_when_available?</a>&nbsp;&nbsp;
+      <a href="#M000189">show_equalizer=</a>&nbsp;&nbsp;
+      <a href="#M000188">show_equalizer?</a>&nbsp;&nbsp;
+      <a href="#M000174">show_favorites_window=</a>&nbsp;&nbsp;
+      <a href="#M000173">show_favorites_window?</a>&nbsp;&nbsp;
+      <a href="#M000185">show_movie_info_window=</a>&nbsp;&nbsp;
+      <a href="#M000184">show_movie_info_window?</a>&nbsp;&nbsp;
+      <a href="#M000191">show_timecode_when_available=</a>&nbsp;&nbsp;
+      <a href="#M000190">show_timecode_when_available?</a>&nbsp;&nbsp;
+      <a href="#M000161">show_welcome_movie_automatically=</a>&nbsp;&nbsp;
+      <a href="#M000160">show_welcome_movie_automatically?</a>&nbsp;&nbsp;
+      <a href="#M000236">skew</a>&nbsp;&nbsp;
+      <a href="#M000243">start</a>&nbsp;&nbsp;
+      <a href="#M000237">step_backward</a>&nbsp;&nbsp;
+      <a href="#M000238">step_forward</a>&nbsp;&nbsp;
+      <a href="#M000239">stop</a>&nbsp;&nbsp;
+      <a href="#M000187">suspend_playing_movies_on_user_switch=</a>&nbsp;&nbsp;
+      <a href="#M000186">suspend_playing_movies_on_user_switch?</a>&nbsp;&nbsp;
+      <a href="#M000240">translate</a>&nbsp;&nbsp;
+      <a href="#M000241">trim</a>&nbsp;&nbsp;
+      <a href="#M000242">undo</a>&nbsp;&nbsp;
+      <a href="#M000183">use_high_quality_video_setting_when_available=</a>&nbsp;&nbsp;
+      <a href="#M000182">use_high_quality_video_setting_when_available?</a>&nbsp;&nbsp;
+      <a href="#M000157">version</a>&nbsp;&nbsp;
+      <a href="#M000159">windows</a>&nbsp;&nbsp;
+      <a href="#M000196">windows2</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000198" class="method-detail">
+        <a name="M000198"></a>
+
+        <div class="method-heading">
+          <span class="method-name">activate<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Activate the application.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000211" class="method-detail">
+        <a name="M000211"></a>
+
+        <div class="method-heading">
+          <span class="method-name">add(direct, scaled=nil)<br />
+add(direct, :scaled => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Add an object from the clipboard in parallel to the current selection.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to <a href="Application.html#M000211">add</a> to.
+
+</td></tr>
+<tr><td valign="top">scaled:</td><td>Should added content be scaled to duration of current selection? Optional.
+Can be passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000215" class="method-detail">
+        <a name="M000215"></a>
+
+        <div class="method-heading">
+          <span class="method-name">can_export?(direct, as)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Determine if a movie or track can be exported to the desired type.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The movie or track to <a href="Application.html#M000216">export</a>.
+
+</td></tr>
+<tr><td valign="top">as:</td><td>The desired file type.
+
+</td></tr>
+<tr><td valign="top">Returns:</td><td>Is the <a href="Application.html#M000216">export</a> supported.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000212" class="method-detail">
+        <a name="M000212"></a>
+
+        <div class="method-heading">
+          <span class="method-name">clear(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Clear the current selection.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object containing the selection to <a
+href="Application.html#M000212">clear</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000201" class="method-detail">
+        <a name="M000201"></a>
+
+        <div class="method-heading">
+          <span class="method-name">close(direct, saving=nil, saving_in=nil)<br />
+close(direct, :saving => nil, :saving_in => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Close an object.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to <a href="Application.html#M000201">close</a>.
+
+</td></tr>
+<tr><td valign="top">saving:</td><td>Specifies whether changes should be saved before closing. Optional. Can be
+passed as a Hash key/value.
+
+</td></tr>
+<tr><td valign="top">saving_in:</td><td>The file in which to <a href="Application.html#M000209">save</a> the
+object. Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000213" class="method-detail">
+        <a name="M000213"></a>
+
+        <div class="method-heading">
+          <span class="method-name">copy(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Copy an object to the clipboard.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object containing the selection to <a
+href="Application.html#M000213">copy</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000202" class="method-detail">
+        <a name="M000202"></a>
+
+        <div class="method-heading">
+          <span class="method-name">count(direct, each=nil)<br />
+count(direct, :each => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Return the number of elements of a particular class within an object.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object whose elements are to be counted.
+
+</td></tr>
+<tr><td valign="top">each:</td><td>The class of objects to be counted. Optional. Can be passed as a Hash
+key/value.
+
+</td></tr>
+<tr><td valign="top">Returns:</td><td>The number of elements.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000214" class="method-detail">
+        <a name="M000214"></a>
+
+        <div class="method-heading">
+          <span class="method-name">cut(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Cut an object to the clipboard.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object containing the selection to <a
+href="Application.html#M000214">cut</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000203" class="method-detail">
+        <a name="M000203"></a>
+
+        <div class="method-heading">
+          <span class="method-name">delete(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Delete an object.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to <a href="Application.html#M000203">delete</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000158" class="method-detail">
+        <a name="M000158"></a>
+
+        <div class="method-heading">
+          <span class="method-name">documents<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Application.html#M000158">documents</a> associated with
+this object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Document.html">OSA::QuickTimePlayer::Document</a>
+objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000193" class="method-detail">
+        <a name="M000193"></a>
+
+        <div class="method-heading">
+          <span class="method-name">documents2<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Application.html#M000158">documents</a> associated with
+this object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Document.html">OSA::QuickTimePlayer::Document</a>
+objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000204" class="method-detail">
+        <a name="M000204"></a>
+
+        <div class="method-heading">
+          <span class="method-name">duplicate(direct, to, with_properties=nil)<br />
+duplicate(direct, to, :with_properties => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Copy object(s) and put the copies at a new location.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object(s) to <a href="Application.html#M000204">duplicate</a>.
+
+</td></tr>
+<tr><td valign="top">to:</td><td>The location for the new object(s).
+
+</td></tr>
+<tr><td valign="top">with_properties:</td><td>Properties to be <a href="Application.html#M000210">set</a> in the new
+duplicated object(s). Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000205" class="method-detail">
+        <a name="M000205"></a>
+
+        <div class="method-heading">
+          <span class="method-name">exists?(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Verify if an object exists.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object in question.
+
+</td></tr>
+<tr><td valign="top">Returns:</td><td>True if it exists, false if not.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000216" class="method-detail">
+        <a name="M000216"></a>
+
+        <div class="method-heading">
+          <span class="method-name">export(direct, to, as, using=nil, using_settings_preset=nil, using_settings=nil, replacing=nil)<br />
+export(direct, to, as, :using => nil, :using_settings_preset => nil, :using_settings => nil, :replacing => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Export a movie or track to a file.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The movie or track to <a href="Application.html#M000216">export</a>.
+
+</td></tr>
+<tr><td valign="top">to:</td><td>The destination file.
+
+</td></tr>
+<tr><td valign="top">as:</td><td>The desired file type.
+
+</td></tr>
+<tr><td valign="top">using:</td><td>The <a href="Application.html#M000216">export</a> settings to use.
+Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+<tr><td valign="top">using_settings_preset:</td><td>The <a href="Application.html#M000155">name</a> of the <a
+href="Application.html#M000216">export</a> settings preset to use.
+Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+<tr><td valign="top">using_settings:</td><td>The file containing the <a href="Application.html#M000216">export</a>
+settings. Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+<tr><td valign="top">replacing:</td><td>Should the original file be deleted first? Optional. Can be passed as a
+Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000192" class="method-detail">
+        <a name="M000192"></a>
+
+        <div class="method-heading">
+          <span class="method-name">favorites<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Application.html#M000192">favorites</a> associated with
+this object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Favorite.html">OSA::QuickTimePlayer::Favorite</a>
+objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000217" class="method-detail">
+        <a name="M000217"></a>
+
+        <div class="method-heading">
+          <span class="method-name">find(direct, text, backwards=nil)<br />
+find(direct, text, :backwards => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Find text in a movie.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to search.
+
+</td></tr>
+<tr><td valign="top">text:</td><td>The text to search for.
+
+</td></tr>
+<tr><td valign="top">backwards:</td><td>Perform the search backwards? Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+<tr><td valign="top">Returns:</td><td>The time at which the text is found.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000218" class="method-detail">
+        <a name="M000218"></a>
+
+        <div class="method-heading">
+          <span class="method-name">flip_horizontal(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Flip an object along the horizontal axis.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to flip.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000219" class="method-detail">
+        <a name="M000219"></a>
+
+        <div class="method-heading">
+          <span class="method-name">flip_vertical(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Flip an object along the vertical axis.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to flip.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000156" class="method-detail">
+        <a name="M000156"></a>
+
+        <div class="method-heading">
+          <span class="method-name">frontmost?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the frontmost property &#8212; is this the frontmost (active)
+application?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000206" class="method-detail">
+        <a name="M000206"></a>
+
+        <div class="method-heading">
+          <span class="method-name">get(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Get the data for an object.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>Documentation not available.
+
+</td></tr>
+<tr><td valign="top">Returns:</td><td>Documentation not available.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000220" class="method-detail">
+        <a name="M000220"></a>
+
+        <div class="method-heading">
+          <span class="method-name">geturl(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Play a movie from a URL.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The URL.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000168" class="method-detail">
+        <a name="M000168"></a>
+
+        <div class="method-heading">
+          <span class="method-name">ignore_auto_play=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the ignore auto play property &#8212; ignore requests to auto-play
+movies upon opening?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000167" class="method-detail">
+        <a name="M000167"></a>
+
+        <div class="method-heading">
+          <span class="method-name">ignore_auto_play?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the ignore auto play property &#8212; ignore requests to auto-play
+movies upon opening?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000176" class="method-detail">
+        <a name="M000176"></a>
+
+        <div class="method-heading">
+          <span class="method-name">ignore_auto_present=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the ignore auto <a href="Application.html#M000225">present</a>
+property &#8212; ignore requests to auto-<a
+href="Application.html#M000225">present</a> movies upon opening?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000175" class="method-detail">
+        <a name="M000175"></a>
+
+        <div class="method-heading">
+          <span class="method-name">ignore_auto_present?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the ignore auto <a href="Application.html#M000225">present</a>
+property &#8212; ignore requests to auto-<a
+href="Application.html#M000225">present</a> movies upon opening?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000221" class="method-detail">
+        <a name="M000221"></a>
+
+        <div class="method-heading">
+          <span class="method-name">invert(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Invert an object.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to <a href="Application.html#M000221">invert</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000207" class="method-detail">
+        <a name="M000207"></a>
+
+        <div class="method-heading">
+          <span class="method-name">make(new, at=nil, with_data=nil, with_properties=nil)<br />
+make(new, :at => nil, :with_data => nil, :with_properties => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Make a new object.
+</p>
+<table>
+<tr><td valign="top">new:</td><td>The class of the new object.
+
+</td></tr>
+<tr><td valign="top">at:</td><td>The location at which to insert the object. Optional. Can be passed as a
+Hash key/value.
+
+</td></tr>
+<tr><td valign="top">with_data:</td><td>The initial data for the object. Optional. Can be passed as a Hash
+key/value.
+
+</td></tr>
+<tr><td valign="top">with_properties:</td><td>The initial values for properties of the object. Optional. Can be passed as
+a Hash key/value.
+
+</td></tr>
+<tr><td valign="top">Returns:</td><td>To the new object.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000208" class="method-detail">
+        <a name="M000208"></a>
+
+        <div class="method-heading">
+          <span class="method-name">move(direct, to)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Move object(s) to a new location.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object(s) to <a href="Application.html#M000208">move</a>.
+
+</td></tr>
+<tr><td valign="top">to:</td><td>The new location for the object(s).
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000155" class="method-detail">
+        <a name="M000155"></a>
+
+        <div class="method-heading">
+          <span class="method-name">name<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Application.html#M000155">name</a> property &#8212; the
+<a href="Application.html#M000155">name</a> of the application.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000245" class="method-detail">
+        <a name="M000245"></a>
+
+        <div class="method-heading">
+          <span class="method-name">new_audio_recording(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Create a new audio recording.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The application.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000246" class="method-detail">
+        <a name="M000246"></a>
+
+        <div class="method-heading">
+          <span class="method-name">new_movie_recording(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Create a new movie recording.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The application.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000166" class="method-detail">
+        <a name="M000166"></a>
+
+        <div class="method-heading">
+          <span class="method-name">only_front_movie_plays_sound=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the only front movie plays sound property &#8212; should only sound of
+front movie be played?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000165" class="method-detail">
+        <a name="M000165"></a>
+
+        <div class="method-heading">
+          <span class="method-name">only_front_movie_plays_sound?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the only front movie plays sound property &#8212; should only sound of
+front movie be played?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000197" class="method-detail">
+        <a name="M000197"></a>
+
+        <div class="method-heading">
+          <span class="method-name">open(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Open an object.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The file(s) to be opened.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000222" class="method-detail">
+        <a name="M000222"></a>
+
+        <div class="method-heading">
+          <span class="method-name">open_image_sequence(direct, frames_per_second=nil, seconds_per_frame=nil)<br />
+open_image_sequence(direct, :frames_per_second => nil, :seconds_per_frame => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Open image sequence starting with the file.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The file representing first image of the image sequence.
+
+</td></tr>
+<tr><td valign="top">frames_per_second:</td><td>The number of desired frames per second. Optional. Can be passed as a Hash
+key/value.
+
+</td></tr>
+<tr><td valign="top">seconds_per_frame:</td><td>The duration of each frame in seconds. Optional. Can be passed as a Hash
+key/value.
+
+</td></tr>
+<tr><td valign="top">Returns:</td><td>The list of <a href="Application.html#M000158">documents</a> opened.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000223" class="method-detail">
+        <a name="M000223"></a>
+
+        <div class="method-heading">
+          <span class="method-name">open_location(direct, position=nil)<br />
+open_location(direct, :position => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Play the specified internet location(s).
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>List of internet locations to <a href="Application.html#M000197">open</a>.
+
+</td></tr>
+<tr><td valign="top">position:</td><td>The upper left coordinates of the window. Optional. Can be passed as a Hash
+key/value.
+
+</td></tr>
+<tr><td valign="top">Returns:</td><td>The list of <a href="Application.html#M000158">documents</a> opened.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000170" class="method-detail">
+        <a name="M000170"></a>
+
+        <div class="method-heading">
+          <span class="method-name">open_movie_in_new_player=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the <a href="Application.html#M000197">open</a> movie in new player
+property &#8212; should movies be opened in separate windows?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000169" class="method-detail">
+        <a name="M000169"></a>
+
+        <div class="method-heading">
+          <span class="method-name">open_movie_in_new_player?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Application.html#M000197">open</a> movie in new player
+property &#8212; should movies be opened in separate windows?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000224" class="method-detail">
+        <a name="M000224"></a>
+
+        <div class="method-heading">
+          <span class="method-name">paste(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Paste an object from the clipboard.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to <a href="Application.html#M000224">paste</a> into.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000244" class="method-detail">
+        <a name="M000244"></a>
+
+        <div class="method-heading">
+          <span class="method-name">pause(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Pause a movie or recording.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The movie to <a href="Application.html#M000244">pause</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000181" class="method-detail">
+        <a name="M000181"></a>
+
+        <div class="method-heading">
+          <span class="method-name">play_movie_from_beginning_when_opened=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the play movie from beginning when opened property &#8212; should
+movies auto-play when opened?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000180" class="method-detail">
+        <a name="M000180"></a>
+
+        <div class="method-heading">
+          <span class="method-name">play_movie_from_beginning_when_opened?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the play movie from beginning when opened property &#8212; should
+movies auto-play when opened?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000172" class="method-detail">
+        <a name="M000172"></a>
+
+        <div class="method-heading">
+          <span class="method-name">play_sound_in_background=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the play sound in background property &#8212; should sound of
+background movies be played?
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000171" class="method-detail">
+        <a name="M000171"></a>
+
+        <div class="method-heading">
+          <span class="method-name">play_sound_in_background?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the play sound in background property &#8212; should sound of
+background movies be played?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000225" class="method-detail">
+        <a name="M000225"></a>
+
+        <div class="method-heading">
+          <span class="method-name">present(direct, scale=nil, mode=nil, display=nil, background_color=nil)<br />
+present(direct, :scale => nil, :mode => nil, :display => nil, :background_color => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Present a movie.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The movie to <a href="Application.html#M000225">present</a>.
+
+</td></tr>
+<tr><td valign="top">scale:</td><td>The size at which to <a href="Application.html#M000225">present</a> the
+movie. Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+<tr><td valign="top">mode:</td><td>The mode in which to <a href="Application.html#M000225">present</a> the
+movie. Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+<tr><td valign="top">display:</td><td>The display on which to <a href="Application.html#M000225">present</a> the
+movie. Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+<tr><td valign="top">background_color:</td><td>The background color, e.g. {65535, 65535, 65535}, the rgb value for white.
+Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000199" class="method-detail">
+        <a name="M000199"></a>
+
+        <div class="method-heading">
+          <span class="method-name">print(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Print an object.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The file(s) or document(s) to be printed.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000164" class="method-detail">
+        <a name="M000164"></a>
+
+        <div class="method-heading">
+          <span class="method-name">quicktime_pro_installed?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the QuickTime Pro installed property &#8212; is the pro <a
+href="Application.html#M000157">version</a> of QuickTime installed?
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000179" class="method-detail">
+        <a name="M000179"></a>
+
+        <div class="method-heading">
+          <span class="method-name">quicktime_version<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the QuickTime <a href="Application.html#M000157">version</a> property
+&#8212; the <a href="Application.html#M000157">version</a> of the installed
+QuickTime.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as real.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000200" class="method-detail">
+        <a name="M000200"></a>
+
+        <div class="method-heading">
+          <span class="method-name">quit(saving=nil)<br />
+quit(:saving => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Quit an application.
+</p>
+<table>
+<tr><td valign="top">saving:</td><td>Specifies whether changes should be saved before quitting. Optional. Can be
+passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000194" class="method-detail">
+        <a name="M000194"></a>
+
+        <div class="method-heading">
+          <span class="method-name">recent_items<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the recent items associated with this object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="RecentItem.html">OSA::QuickTimePlayer::RecentItem</a>
+objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000195" class="method-detail">
+        <a name="M000195"></a>
+
+        <div class="method-heading">
+          <span class="method-name">recordings<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Application.html#M000195">recordings</a> associated with
+this object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Recording.html">OSA::QuickTimePlayer::Recording</a>
+objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000226" class="method-detail">
+        <a name="M000226"></a>
+
+        <div class="method-heading">
+          <span class="method-name">redo(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Redo the action of the previous event or user interaction.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>Movie.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000227" class="method-detail">
+        <a name="M000227"></a>
+
+        <div class="method-heading">
+          <span class="method-name">replace(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Replace the current selection with an object from the clipboard.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>Movie.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000228" class="method-detail">
+        <a name="M000228"></a>
+
+        <div class="method-heading">
+          <span class="method-name">resize(direct, by=nil, around=nil)<br />
+resize(direct, :by => nil, :around => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Scale an object.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to scale.
+
+</td></tr>
+<tr><td valign="top">by:</td><td>The percent of current size. Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+<tr><td valign="top">around:</td><td>The point to <a href="Application.html#M000228">resize</a> around.
+Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000229" class="method-detail">
+        <a name="M000229"></a>
+
+        <div class="method-heading">
+          <span class="method-name">rewind(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Rewind a movie to the beginning.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The movie to <a href="Application.html#M000229">rewind</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000230" class="method-detail">
+        <a name="M000230"></a>
+
+        <div class="method-heading">
+          <span class="method-name">rotate(direct, by, around=nil)<br />
+rotate(direct, by, :around => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Rotate an object by an arbitrary amount.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to <a href="Application.html#M000230">rotate</a>.
+
+</td></tr>
+<tr><td valign="top">by:</td><td>The amount of rotation (in degrees).
+
+</td></tr>
+<tr><td valign="top">around:</td><td>The point to <a href="Application.html#M000230">rotate</a> around.
+Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000231" class="method-detail">
+        <a name="M000231"></a>
+
+        <div class="method-heading">
+          <span class="method-name">rotate_left(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Rotate an object 90¡ left.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to <a href="Application.html#M000230">rotate</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000232" class="method-detail">
+        <a name="M000232"></a>
+
+        <div class="method-heading">
+          <span class="method-name">rotate_right(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Rotate an object 90¡ right.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to <a href="Application.html#M000230">rotate</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000209" class="method-detail">
+        <a name="M000209"></a>
+
+        <div class="method-heading">
+          <span class="method-name">save(direct, _in=nil, as=nil)<br />
+save(direct, :_in => nil, :as => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Save an object.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to <a href="Application.html#M000209">save</a>, usually a
+document or window.
+
+</td></tr>
+<tr><td valign="top">_in:</td><td>The file in which to <a href="Application.html#M000209">save</a> the
+object. Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+<tr><td valign="top">as:</td><td>The file type in which to <a href="Application.html#M000209">save</a> the
+data. Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000247" class="method-detail">
+        <a name="M000247"></a>
+
+        <div class="method-heading">
+          <span class="method-name">save_reference_movie(to, using_descriptors, replacing=nil)<br />
+save_reference_movie(to, using_descriptors, :replacing => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Save a movie that references multiple versions of another movie to a file.
+</p>
+<table>
+<tr><td valign="top">to:</td><td>The destination file.
+
+</td></tr>
+<tr><td valign="top">using_descriptors:</td><td>A list of records that can contain movieURL, dataRate, and platform, where
+platform can be desktop or iPhone.
+
+</td></tr>
+<tr><td valign="top">replacing:</td><td>Should the original file be deleted first? Optional. Can be passed as a
+Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000233" class="method-detail">
+        <a name="M000233"></a>
+
+        <div class="method-heading">
+          <span class="method-name">select(direct, at=nil, to=nil)<br />
+select(direct, :at => nil, :to => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Select a range of time.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The movie whose selection is to be <a
+href="Application.html#M000210">set</a>.
+
+</td></tr>
+<tr><td valign="top">at:</td><td>Starting time of the selection. Optional. Can be passed as a Hash
+key/value.
+
+</td></tr>
+<tr><td valign="top">to:</td><td>End time of the selection. Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000234" class="method-detail">
+        <a name="M000234"></a>
+
+        <div class="method-heading">
+          <span class="method-name">select_all(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Select the entire movie.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The movie to <a href="Application.html#M000233">select</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000235" class="method-detail">
+        <a name="M000235"></a>
+
+        <div class="method-heading">
+          <span class="method-name">select_none(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Set the selection of the movie to nothing.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The movie to <a href="Application.html#M000233">select</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000210" class="method-detail">
+        <a name="M000210"></a>
+
+        <div class="method-heading">
+          <span class="method-name">set(direct, to)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Set an object&#8216;s data.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>Documentation not available.
+
+</td></tr>
+<tr><td valign="top">to:</td><td>The new value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000178" class="method-detail">
+        <a name="M000178"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_av_controls_window=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the show av controls window property &#8212; show/hide the a/v
+controls window.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000177" class="method-detail">
+        <a name="M000177"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_av_controls_window?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the show av controls window property &#8212; show/hide the a/v
+controls window.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000163" class="method-detail">
+        <a name="M000163"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_closed_captioning_when_available=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the show closed captioning when available property &#8212; show closed
+captioning (when supported by content).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000162" class="method-detail">
+        <a name="M000162"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_closed_captioning_when_available?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the show closed captioning when available property &#8212; show closed
+captioning (when supported by content).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000189" class="method-detail">
+        <a name="M000189"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_equalizer=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the show equalizer property &#8212; should equalizer be displayed for
+audio content.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000188" class="method-detail">
+        <a name="M000188"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_equalizer?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the show equalizer property &#8212; should equalizer be displayed for
+audio content.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000174" class="method-detail">
+        <a name="M000174"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_favorites_window=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the show <a href="Application.html#M000192">favorites</a> window
+property &#8212; show the <a href="Application.html#M000192">favorites</a>
+window.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000173" class="method-detail">
+        <a name="M000173"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_favorites_window?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the show <a href="Application.html#M000192">favorites</a> window
+property &#8212; show the <a href="Application.html#M000192">favorites</a>
+window.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000185" class="method-detail">
+        <a name="M000185"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_movie_info_window=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the show movie info window property &#8212; show the movie info
+window.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000184" class="method-detail">
+        <a name="M000184"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_movie_info_window?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the show movie info window property &#8212; show the movie info
+window.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000191" class="method-detail">
+        <a name="M000191"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_timecode_when_available=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the show timecode when available property &#8212; show timecode (when
+supported by content).
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000190" class="method-detail">
+        <a name="M000190"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_timecode_when_available?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the show timecode when available property &#8212; show timecode (when
+supported by content).
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000161" class="method-detail">
+        <a name="M000161"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_welcome_movie_automatically=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the show welcome movie automatically property &#8212; always show the
+Content Guide when application launches.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000160" class="method-detail">
+        <a name="M000160"></a>
+
+        <div class="method-heading">
+          <span class="method-name">show_welcome_movie_automatically?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the show welcome movie automatically property &#8212; always show the
+Content Guide when application launches.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000236" class="method-detail">
+        <a name="M000236"></a>
+
+        <div class="method-heading">
+          <span class="method-name">skew(direct, by, around=nil)<br />
+skew(direct, by, :around => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Skew an object by an arbitrary amount.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to <a href="Application.html#M000236">skew</a>.
+
+</td></tr>
+<tr><td valign="top">by:</td><td>The amount of <a href="Application.html#M000236">skew</a>.
+
+</td></tr>
+<tr><td valign="top">around:</td><td>The point to <a href="Application.html#M000236">skew</a> around. Optional.
+Can be passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000243" class="method-detail">
+        <a name="M000243"></a>
+
+        <div class="method-heading">
+          <span class="method-name">start(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Start playing or recording a movie.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The movie to <a href="Application.html#M000243">start</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000237" class="method-detail">
+        <a name="M000237"></a>
+
+        <div class="method-heading">
+          <span class="method-name">step_backward(direct, by=nil)<br />
+step_backward(direct, :by => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Move the current time backward.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The movie to step.
+
+</td></tr>
+<tr><td valign="top">by:</td><td>Number of steps. Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000238" class="method-detail">
+        <a name="M000238"></a>
+
+        <div class="method-heading">
+          <span class="method-name">step_forward(direct, by=nil)<br />
+step_forward(direct, :by => nil)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Move the current time forward.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The movie to step.
+
+</td></tr>
+<tr><td valign="top">by:</td><td>Number of steps. Optional. Can be passed as a Hash key/value.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000239" class="method-detail">
+        <a name="M000239"></a>
+
+        <div class="method-heading">
+          <span class="method-name">stop(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Stop playing or recording a movie.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The movie to <a href="Application.html#M000239">stop</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000187" class="method-detail">
+        <a name="M000187"></a>
+
+        <div class="method-heading">
+          <span class="method-name">suspend_playing_movies_on_user_switch=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the suspend playing movies on user switch property &#8212; should
+playing movies be suspended when switching to a different user.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000186" class="method-detail">
+        <a name="M000186"></a>
+
+        <div class="method-heading">
+          <span class="method-name">suspend_playing_movies_on_user_switch?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the suspend playing movies on user switch property &#8212; should
+playing movies be suspended when switching to a different user.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000240" class="method-detail">
+        <a name="M000240"></a>
+
+        <div class="method-heading">
+          <span class="method-name">translate(direct, by)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Translate the object some distance.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>The object to <a href="Application.html#M000240">translate</a>.
+
+</td></tr>
+<tr><td valign="top">by:</td><td>The distance to <a href="Application.html#M000240">translate</a>.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000241" class="method-detail">
+        <a name="M000241"></a>
+
+        <div class="method-heading">
+          <span class="method-name">trim(direct)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Remove all content before and after the current selection.
+</p>
+<table>
+<tr><td valign="top">direct:</td><td>Movie.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000242" class="method-detail">
+        <a name="M000242"></a>
+
+        <div class="method-heading">
+          <span class="method-name">undo<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Undo the action of the previous event or user interaction.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000183" class="method-detail">
+        <a name="M000183"></a>
+
+        <div class="method-heading">
+          <span class="method-name">use_high_quality_video_setting_when_available=(val)<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets the use high quality video setting when available property &#8212; use
+high-quality video playback when available.
+</p>
+<table>
+<tr><td valign="top">val:</td><td>The value to be <a href="Application.html#M000210">set</a>, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000182" class="method-detail">
+        <a name="M000182"></a>
+
+        <div class="method-heading">
+          <span class="method-name">use_high_quality_video_setting_when_available?<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the use high quality video setting when available property &#8212; use
+high-quality video playback when available.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as boolean.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000157" class="method-detail">
+        <a name="M000157"></a>
+
+        <div class="method-heading">
+          <span class="method-name">version<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Application.html#M000157">version</a> property &#8212;
+the <a href="Application.html#M000157">version</a> of the application.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>The property value, as text.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000159" class="method-detail">
+        <a name="M000159"></a>
+
+        <div class="method-heading">
+          <span class="method-name">windows<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Application.html#M000159">windows</a> associated with
+this object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Window.html">OSA::QuickTimePlayer::Window</a> objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+      <div id="method-M000196" class="method-detail">
+        <a name="M000196"></a>
+
+        <div class="method-heading">
+          <span class="method-name">windows2<br />
+</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Gets the <a href="Application.html#M000159">windows</a> associated with
+this object.
+</p>
+<table>
+<tr><td valign="top">Returns:</td><td>An Array of <a href="Window.html">OSA::QuickTimePlayer::Window</a> objects.
+
+</td></tr>
+</table>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
