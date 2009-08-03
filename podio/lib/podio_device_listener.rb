@@ -21,9 +21,11 @@ class PodioDeviceListener
           puts "Read raw value: [#{raw_value}]"
           
           case raw_value
-            when "D" then 
+            when "L" then 
               quicktime_radio_thread = Thread.new { quicktime_radio.play } unless quicktime_radio.playing?
-              serial_port.write("C") 
+              serial_port.write("P") 
+            when /^V\.\d{1,2}$/ then
+              quicktime_radio.change_volume_to(raw_value.gsub(/V\./, '').to_i)
             when "S" then
               quicktime_radio.stop
               quicktime_radio_thread.terminate
