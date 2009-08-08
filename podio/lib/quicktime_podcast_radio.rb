@@ -16,6 +16,7 @@ class QuicktimePodcastRadio
   def initialize
     @quick_time_app = OSA.app('QuickTime Player')
     OSA.wait_reply = true
+    @current_playlist_index = 0
   end
   
   def play
@@ -38,6 +39,12 @@ class QuicktimePodcastRadio
     return unless playing?
     @quick_time_app.close(@current_podcast)
     @current_podcast = nil
+  end
+  
+  def skip
+    return unless playing?
+    @quick_time_app.stop(@current_podcast)
+    sleep(5)
   end
   
   def change_volume_to(ten_based_value)

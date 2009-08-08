@@ -26,6 +26,8 @@ class PodioDeviceListener
               serial_port.write("P") 
             when /^V\.\d{1,2}$/ then
               quicktime_radio.change_volume_to(raw_value.gsub(/V\./, '').to_i)
+            when "N" then
+              quicktime_radio.skip
             when "S" then
               quicktime_radio.stop
               quicktime_radio_thread.terminate
